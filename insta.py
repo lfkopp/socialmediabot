@@ -56,10 +56,18 @@ class Instagram:
 
 insta = Instagram()
 insta.login()
-#insta.curtir(10)
-insta.curtir_hashtag('bitcoin',1)
+sleep(90)
+insta.curtir(10)
+sleep(240)
+insta.curtir_hashtag('blockchain',1)
+sleep(240)
 insta.curtir_hashtag('tkditf',1)
+sleep(240)
 insta.curtir_hashtag('internetofthings',1)
+sleep(240)
+insta.curtir_hashtag('tbt',2)
+
+
 
 '''    def curtir(self,pages=0):
         bot = self.bot
