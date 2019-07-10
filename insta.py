@@ -9,7 +9,7 @@ class Instagram:
     def login(self):
         bot = self.bot
         self.username,self.password = models.get_credentials('instagram')
-        bot.get('https://www.instagram.com/accounts/login/')
+        bot.get('https://www.instagram.com.br/accounts/login/')
         sleep(3)
         username = bot.find_element_by_name('username')
         password = bot.find_element_by_name('password')
@@ -26,7 +26,7 @@ class Instagram:
 
     def curtir(self,pages=10):
         bot = self.bot
-        bot.get('https://www.instagram.com')
+        bot.get('https://www.instagram.com.br')
         curtida = 0
         while curtida < pages:
             print(curtida)
