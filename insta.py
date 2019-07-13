@@ -2,6 +2,7 @@ import models
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from time import sleep
+from random import shuffle
 
 class Instagram:
     def __init__(self):
@@ -50,36 +51,19 @@ class Instagram:
                 heart = bot.find_element_by_xpath('//article//section/span[1]/button/span[@aria-label="Curtir"]')
                 sleep(2)
                 heart.click()
-                print('o',end='')
+                print('o',end='',flush=True)
             except:
-                print('.',end='')
+                print('.',end='',flush=True)
 
 insta = Instagram()
 insta.login()
 
-sleep(90)
-insta.curtir(10)
+sleep(19)
+insta.curtir(30)
 sleep(240)
-insta.curtir_hashtag('blockchain',1)
-sleep(240)
-insta.curtir_hashtag('tkditf',1)
-sleep(240)
-insta.curtir_hashtag('internetofthings',1)
-sleep(240)
-insta.curtir_hashtag('tbt',2)
-
-
-'''    def curtir(self,pages=0):
-        bot = self.bot
-        bot.get('https://www.instagram.com/')
-        for i in range(0,pages):
-            print(i)
-            bot.execute_script('window.scrollTo(0,document.body.scrollHeight)')
-            sleep(3)
-        for i in range(10):
-            posts = bot.find_elements_by_class_name('fr66n')
-            for post in posts:
-                to_click = post.find_element_by_class_name('glyphsSpriteHeart__outline__24__grey_9')
-                to_click.click()
-                sleep(4)
-'''
+words = ['brasilrugby','datascience','machinelearning','tkditf','taekwondoitf','riodejaneiro','climatechange','fluminensefc','ipanema','copacabana','computerscience','arduino','iot','internetofthings','jovemnerd','python']
+shuffle(words)
+for word in words[:7]:
+    print('\n word: '+word,flush=True)
+    insta.curtir_hashtag(word,1)
+    sleep(240)
