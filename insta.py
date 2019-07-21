@@ -10,7 +10,7 @@ class Instagram:
     def login(self):
         bot = self.bot
         self.username,self.password = models.get_credentials('instagram')
-        bot.get('https://www.instagram.com/accounts/login/')
+        bot.get('https://www.instagram.com/accounts/login/?hl=pt-br')
         sleep(3)
         username = bot.find_element_by_name('username')
         password = bot.find_element_by_name('password')
@@ -27,7 +27,7 @@ class Instagram:
 
     def curtir(self,pages=10):
         bot = self.bot
-        bot.get('https://www.instagram.com')
+        bot.get('https://www.instagram.com/?hl=pt-br')
         curtida = 0
         while curtida < pages:
             print(curtida)
@@ -47,7 +47,7 @@ class Instagram:
         for post in links:
             sleep(3)
             try:
-                bot.get(post)
+                bot.get(post+'?hl=pt-br')
                 heart = bot.find_element_by_xpath('//article//section/span[1]/button/span[@aria-label="Curtir"]')
                 sleep(2)
                 heart.click()
