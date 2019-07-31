@@ -44,6 +44,61 @@ class Instagram:
                 bot.execute_script('window.scrollTo(0,document.body.scrollHeight)')
 
 
+    def following(self):
+        bot = self.bot
+        bot.get('https://www.instagram.com/'+ self.username +'/following/')
+        following_link = bot.find_element_by_xpath('/html/body/span/section/main/div/header/section/ul/li[3]/a').click()
+        sleep(.3)
+        content = bot.find_element_by_tag_name('body')
+        content.send_keys(Keys.TAB)
+        sleep(.3)
+        content2 = bot.find_element_by_tag_name('body')
+        content2.send_keys(Keys.TAB)
+        content3 = bot.find_element_by_tag_name('body')
+        content3.send_keys(Keys.TAB)
+        content4 = bot.find_element_by_tag_name('body')
+        content4.send_keys(Keys.TAB)
+        content5 = bot.find_element_by_tag_name('body')
+        content5.send_keys(Keys.TAB)
+        content6 = bot.find_element_by_tag_name('body')
+        content6.send_keys(Keys.TAB)
+        l = 0
+        len_lista = 1
+        while l<15:
+            content6 = bot.find_element_by_tag_name('body')
+            content6.send_keys(Keys.ARROW_DOWN)
+            lista=content6.find_elements_by_tag_name('li')
+            if len(lista) == len_lista:
+                l += 1
+            else:
+                l = 0
+                print(len(lista))
+            len_lista = len(lista)
+            sleep(.4)
+        soup = BeautifulSoup(bot.page_source, 'html.parser')
+        try:
+            df = pd.read_pickle('following.pickle')
+        except:
+            df = pd.DataFrame([],columns=['time_first','time_last','username','name','status','img'])
+        follow_last = []
+        now = pd.datetime.now()
+        for item in soup.findAll('li', {"class": "wo9IH"}):
+            #print(item)
+            f = dict()
+            f['username'] = item.find('a').get('href').replace('/','')
+            f['img'] = item.find('img').get('src')
+            f['status'] = item.find('button').text
+            f['name'] = item.find('div', {"class": "wFPL8"}).text.replace('\n',' ')
+            f['time_first'] = now
+            f['time_last'] = now
+            print('following',f)
+            if f['username'] not in df['username'].values:
+                df = df.append([f], ignore_index=True, sort=False)
+            else:
+                df.loc[df[df['username'] == f['username']].index,'time_last'] = now
+        df.to_pickle('following.pickle')
+        df.to_csv('following.csv')
+
     def followers(self):
         bot = self.bot
         bot.get('https://www.instagram.com/'+ self.username +'/followers/')
@@ -106,9 +161,12 @@ class Instagram:
                 print('.',end='',flush=True)
 
     def get_photos(self):
-        df = pd.read_pickle('follower.pickle')
+        follower = pd.read_pickle('follower.pickle')
+        following = pd.read_pickle('following.pickle')
+        people = follower.append(following, ignore_index=True)
+        people.drop_duplicates('username',inplace=True)
         has_img =  [str(x[:-4]) for x in listdir('photos/')]
-        for index, row in df.iterrows():
+        for index, row in people.iterrows():
             if row['username'] not in has_img:
                 download(row['img'],'photos/'+row['username']+'.png')
                 print('downloading photo: ',row['username'])
@@ -118,8 +176,10 @@ class Instagram:
 if __name__ == "__main__":
     insta = Instagram()
     insta.login()
+    insta.following()
     insta.followers()
     insta.get_photos()
+    #exit()
     sleep(19)
     insta.curtir(30)
     sleep(240)
