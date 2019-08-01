@@ -34,7 +34,7 @@ class Instagram:
         bot.get('https://www.instagram.com/?hl=pt-br')
         curtida = 0
         while curtida < pages:
-            print(curtida)
+            #print(curtida)
             sleep(4)
             try:
                 bot.find_element_by_xpath('//article//section/span[1]/button/span[@aria-label="Curtir"]').click()
@@ -72,7 +72,7 @@ class Instagram:
                 l += 1
             else:
                 l = 0
-                print(len(lista))
+                #print(len(lista))
             len_lista = len(lista)
             sleep(.4)
         soup = BeautifulSoup(bot.page_source, 'html.parser')
@@ -91,7 +91,7 @@ class Instagram:
             f['name'] = item.find('div', {"class": "wFPL8"}).text.replace('\n',' ')
             f['time_first'] = now
             f['time_last'] = now
-            print('following',f)
+            #print('following',f)
             if f['username'] not in df['username'].values:
                 df = df.append([f], ignore_index=True, sort=False)
             else:
@@ -119,7 +119,7 @@ class Instagram:
                 l += 1
             else:
                 l = 0
-                print(len(lista))
+                #print(len(lista))
             len_lista = len(lista)
             sleep(.4)
         soup = BeautifulSoup(bot.page_source, 'html.parser')
@@ -138,7 +138,7 @@ class Instagram:
             f['name'] = item.find('div', {"class": "wFPL8"}).text.replace('\n',' ')
             f['time_first'] = now
             f['time_last'] = now
-            print('follower',f)
+            #print('follower',f)
             if f['username'] not in df['username'].values:
                 df = df.append([f], ignore_index=True, sort=False)
             else:
