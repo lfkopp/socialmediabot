@@ -183,7 +183,11 @@ if __name__ == "__main__":
     sleep(19)
     insta.curtir(30)
     sleep(240)
-    words = ['hacker','engineering','technology','innovation','startup','brasilrugby','datascience','machinelearning','tkditf','taekwondoitf','riodejaneiro','climatechange','fluminensefc','ipanema','copacabana','computerscience','arduino','iot','internetofthings','jovemnerd','python']
+    words = (['hacker','engineering','technology','innovation','startup',
+    'brasilrugby','datascience','machinelearning','tkditf','taekwondoitf',
+    'riodejaneiro','climatechange','fluminensefc','ipanema','copacabana',
+    'computerscience','arduino','iot','internetofthings','jovemnerd','python',
+    'tbt','love','beautiful','fashion','love'])
     shuffle(words)
     for word in words[:7]:
         print('\n word: '+word,flush=True)
