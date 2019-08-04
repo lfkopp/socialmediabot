@@ -187,7 +187,8 @@ if __name__ == "__main__":
     'brasilrugby','datascience','machinelearning','tkditf','taekwondoitf',
     'riodejaneiro','climatechange','fluminensefc','ipanema','copacabana',
     'computerscience','arduino','iot','internetofthings','jovemnerd','python',
-    'tbt','love','beautiful','fashion','love'])
+    'tbt','love','beautiful','fashion','love','rugby','fgv','ufrj','sustentavel',
+    'sustentabilidade','sustainability','sustaintable','nofilter'])
     shuffle(words)
     for word in words[:7]:
         print('\n word: '+word,flush=True)
