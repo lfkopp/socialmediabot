@@ -3,3 +3,5 @@ __pycache__/
 credentials.txt
 geckodriver.log
 photos/
+follower/
+following/
