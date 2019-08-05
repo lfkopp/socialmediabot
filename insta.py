@@ -192,11 +192,12 @@ class Instagram:
             lista=content2.find_elements_by_tag_name('li')
             if len(lista) == len_lista:
                 l += 1
+                sleep(1)
             else:
-                l +=1
-                #print(len(lista))
+                l =0
+                print(len(lista))
             len_lista = len(lista)
-            sleep(.4)
+            sleep(.2)
         soup = BeautifulSoup(bot.page_source, 'html.parser')
         try:
             df = pd.read_pickle(file)
@@ -205,26 +206,30 @@ class Instagram:
         follow_last = []
         now = pd.datetime.now()
         for item in soup.findAll('li', {"class": "wo9IH"}):
-            #print(item)
-            f = dict()
-            f['username'] = item.find('a').get('href').replace('/','')
-            f['img'] = item.find('img').get('src')
-            f['status'] = item.find('button').text
-            f['name'] = item.find('div', {"class": "wFPL8"}).text.replace('\n',' ')
-            f['time_first'] = now
-            f['time_last'] = now
-            #print('follower',f)
-            if f['username'] not in df['username'].values:
-                df = df.append([f], ignore_index=True, sort=False)
-            else:
-                df.loc[df[df['username'] == f['username']].index,'time_last'] = now
+            try:
+                #print(item)
+                f = dict()
+                f['username'] = item.find('a').get('href').replace('/','')
+                f['img'] = item.find('img').get('src')
+                f['status'] = item.find('button').text
+                f['name'] = item.find('div', {"class": "wFPL8"}).text.replace('\n',' ')
+                f['time_first'] = now
+                f['time_last'] = now
+                #print('follower',f)
+                if f['username'] not in df['username'].values:
+                    df = df.append([f], ignore_index=True, sort=False)
+                else:
+                    df.loc[df[df['username'] == f['username']].index,'time_last'] = now
+            except:
+                print('erro')
         df.to_pickle(file)
         df.to_csv('follower/'+str(user)+'.csv')
 
 if __name__ == "__main__":
     insta = Instagram()
     insta.login()
-    insta.get_follower('cnaranha')
+    #insta.get_follower('cnaranha')
+    insta.get_follower('guanarugby')
     exit()
     insta.following()
     insta.followers()
