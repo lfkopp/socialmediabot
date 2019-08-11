@@ -11,6 +11,7 @@ from os import listdir
 class Instagram:
     def __init__(self):
         self.bot = webdriver.Firefox()
+
     def login(self):
         bot = self.bot
         self.username,self.password = models.get_credentials('instagram')
@@ -28,7 +29,6 @@ class Instagram:
         except:
             pass
 
-
     def curtir(self,pages=10):
         bot = self.bot
         bot.get('https://www.instagram.com/?hl=pt-br')
@@ -42,109 +42,6 @@ class Instagram:
             except Exception as e:
                 print(e)
                 bot.execute_script('window.scrollTo(0,document.body.scrollHeight)')
-
-
-    def following(self):
-        bot = self.bot
-        bot.get('https://www.instagram.com/'+ self.username +'/following/')
-        following_link = bot.find_element_by_xpath('/html/body/span/section/main/div/header/section/ul/li[3]/a').click()
-        sleep(.3)
-        content = bot.find_element_by_tag_name('body')
-        content.send_keys(Keys.TAB)
-        sleep(.3)
-        content2 = bot.find_element_by_tag_name('body')
-        content2.send_keys(Keys.TAB)
-        content3 = bot.find_element_by_tag_name('body')
-        content3.send_keys(Keys.TAB)
-        content4 = bot.find_element_by_tag_name('body')
-        content4.send_keys(Keys.TAB)
-        content5 = bot.find_element_by_tag_name('body')
-        content5.send_keys(Keys.TAB)
-        content6 = bot.find_element_by_tag_name('body')
-        content6.send_keys(Keys.TAB)
-        l = 0
-        len_lista = 1
-        while l<15:
-            content6 = bot.find_element_by_tag_name('body')
-            content6.send_keys(Keys.ARROW_DOWN)
-            lista=content6.find_elements_by_tag_name('li')
-            if len(lista) == len_lista:
-                l += 1
-            else:
-                l = 0
-                #print(len(lista))
-            len_lista = len(lista)
-            sleep(.4)
-        soup = BeautifulSoup(bot.page_source, 'html.parser')
-        try:
-            df = pd.read_pickle('following.pickle')
-        except:
-            df = pd.DataFrame([],columns=['time_first','time_last','username','name','status','img'])
-        follow_last = []
-        now = pd.datetime.now()
-        for item in soup.findAll('li', {"class": "wo9IH"}):
-            #print(item)
-            f = dict()
-            f['username'] = item.find('a').get('href').replace('/','')
-            f['img'] = item.find('img').get('src')
-            f['status'] = item.find('button').text
-            f['name'] = item.find('div', {"class": "wFPL8"}).text.replace('\n',' ')
-            f['time_first'] = now
-            f['time_last'] = now
-            #print('following',f)
-            if f['username'] not in df['username'].values:
-                df = df.append([f], ignore_index=True, sort=False)
-            else:
-                df.loc[df[df['username'] == f['username']].index,'time_last'] = now
-        df.to_pickle('following.pickle')
-        df.to_csv('following.csv')
-
-    def followers(self):
-        bot = self.bot
-        bot.get('https://www.instagram.com/'+ self.username +'/followers/')
-        follower_link = bot.find_element_by_xpath('/html/body/span/section/main/div/header/section/ul/li[2]/a').click()
-        sleep(.3)
-        content = bot.find_element_by_tag_name('body')
-        content.send_keys(Keys.TAB)
-        sleep(.3)
-        content2 = bot.find_element_by_tag_name('body')
-        content2.send_keys(Keys.TAB)
-        l = 0
-        len_lista = 1
-        while l<15:
-            content2 = bot.find_element_by_tag_name('body')
-            content2.send_keys(Keys.ARROW_DOWN)
-            lista=content2.find_elements_by_tag_name('li')
-            if len(lista) == len_lista:
-                l += 1
-            else:
-                l = 0
-                #print(len(lista))
-            len_lista = len(lista)
-            sleep(.4)
-        soup = BeautifulSoup(bot.page_source, 'html.parser')
-        try:
-            df = pd.read_pickle('follower.pickle')
-        except:
-            df = pd.DataFrame([],columns=['time_first','time_last','username','name','status','img'])
-        follow_last = []
-        now = pd.datetime.now()
-        for item in soup.findAll('li', {"class": "wo9IH"}):
-            #print(item)
-            f = dict()
-            f['username'] = item.find('a').get('href').replace('/','')
-            f['img'] = item.find('img').get('src')
-            f['status'] = item.find('button').text
-            f['name'] = item.find('div', {"class": "wFPL8"}).text.replace('\n',' ')
-            f['time_first'] = now
-            f['time_last'] = now
-            #print('follower',f)
-            if f['username'] not in df['username'].values:
-                df = df.append([f], ignore_index=True, sort=False)
-            else:
-                df.loc[df[df['username'] == f['username']].index,'time_last'] = now
-        df.to_pickle('follower.pickle')
-        df.to_csv('follower.csv')
 
     def curtir_hashtag(self, hashtag, n=5):
         bot = self.bot
@@ -161,7 +58,7 @@ class Instagram:
                 print('.',end='',flush=True)
 
     def get_photos(self):
-        follower = pd.read_pickle('follower.pickle')
+        follower = pd.read_pickle('followers.pickle')
         following = pd.read_pickle('following.pickle')
         people = follower.append(following, ignore_index=True)
         people.drop_duplicates('username',inplace=True)
@@ -172,42 +69,65 @@ class Instagram:
                 print('downloading photo: ',row['username'])
                 sleep(1.5)
 
-    def get_follower(self,user):
+    def get_follow(self, follow='followers', user=''):
         bot=self.bot
-        file = 'follower/'+str(user)+'.pickle'
-        following = pd.read_pickle('following.pickle')
-        bot.get('https://www.instagram.com/'+ user +'/followers/')
-        follower_link = bot.find_element_by_xpath('/html/body/span/section/main/div/header/section/ul/li[2]/a').click()
+        if user == '':
+            pickle_file = follow+'.pickle'
+            csv_file = follow+'.csv'
+            user = self.username
+        else:
+            pickle_file = follow+'/'+str(user)+'.pickle'
+            csv_file = follow+'/'+str(user)+'.csv'
+        bot.get('https://www.instagram.com/'+ user +'/'+follow+'/')
         sleep(.3)
-        content = bot.find_element_by_tag_name('body')
-        content.send_keys(Keys.TAB)
-        sleep(.3)
-        content2 = bot.find_element_by_tag_name('body')
-        content2.send_keys(Keys.TAB)
+        if follow == 'followers':
+            follow_link = bot.find_element_by_xpath('/html/body/span/section/main/div/header/section/ul/li[2]/a').click()
+            sleep(.3)
+            content = bot.find_element_by_tag_name('body')
+            content.send_keys(Keys.TAB)
+            sleep(.3)
+            content2 = bot.find_element_by_tag_name('body')
+            content2.send_keys(Keys.TAB)
+        else:
+            follow_link = bot.find_element_by_xpath('/html/body/span/section/main/div/header/section/ul/li[3]/a').click()
+            sleep(.3)
+            content = bot.find_element_by_tag_name('body')
+            content.send_keys(Keys.TAB)
+            sleep(.3)
+            content6 = bot.find_element_by_tag_name('body')
+            content6.send_keys(Keys.TAB)
+            content3 = bot.find_element_by_tag_name('body')
+            content3.send_keys(Keys.TAB)
+            content4 = bot.find_element_by_tag_name('body')
+            content4.send_keys(Keys.TAB)
+            content5 = bot.find_element_by_tag_name('body')
+            content5.send_keys(Keys.TAB)
+            content2 = bot.find_element_by_tag_name('body')
+            content2.send_keys(Keys.TAB)
         l = 0
         len_lista = 1
-        while l<15:
+        while l<35:
+            sleep(.5)
             content2 = bot.find_element_by_tag_name('body')
-            content2.send_keys(Keys.ARROW_DOWN)
+            content2.send_keys(Keys.PAGE_DOWN)
             lista=content2.find_elements_by_tag_name('li')
             if len(lista) == len_lista:
                 l += 1
                 sleep(1)
             else:
                 l =0
-                print(len(lista))
+                print('.',end='',flush=True)
             len_lista = len(lista)
             sleep(.2)
         soup = BeautifulSoup(bot.page_source, 'html.parser')
         try:
-            df = pd.read_pickle(file)
+            df = pd.read_pickle(pickle_file)
         except:
             df = pd.DataFrame([],columns=['time_first','time_last','username','name','status','img'])
         follow_last = []
         now = pd.datetime.now()
         for item in soup.findAll('li', {"class": "wo9IH"}):
             try:
-                #print(item)
                 f = dict()
                 f['username'] = item.find('a').get('href').replace('/','')
                 f['img'] = item.find('img').get('src')
@@ -215,29 +135,81 @@ class Instagram:
                 f['name'] = item.find('div', {"class": "wFPL8"}).text.replace('\n',' ')
                 f['time_first'] = now
                 f['time_last'] = now
-                #print('follower',f)
                 if f['username'] not in df['username'].values:
                     df = df.append([f], ignore_index=True, sort=False)
                 else:
                     df.loc[df[df['username'] == f['username']].index,'time_last'] = now
             except:
                 print('erro')
-        df.to_pickle(file)
-        df.to_csv('follower/'+str(user)+'.csv')
+        df.to_pickle(pickle_file)
+        df.to_csv(csv_file)
+
+    def follow_user(self, user):
+        bot=self.bot
+        bot.get('https://www.instagram.com/'+ user)
+        sleep(.3)
+        try:
+            follow_link = bot.find_element_by_xpath('/html/body/span/section/main/div/header/section/div[1]/div[1]/span/span[1]/button')
+            if "Seguir" in follow_link.text:
+                sleep(.3)
+                follow_link.click()
+
+        except:
+            follow_link = bot.find_element_by_xpath('/html/body/span/section/main/div/header/section/div[1]/button')
+            if "Seguir" in follow_link.text:
+                sleep(.3)
+                follow_link.click()
+        sleep(1)
+        print("Following ", user)
+
+
+    def unfollow_user(self, user):
+        bot=self.bot
+        bot.get('https://www.instagram.com/'+ user)
+        sleep(.3)
+        unfollow_link = bot.find_element_by_xpath('/html/body/span/section/main/div/header/section/div[1]/div[1]/span/span[1]/button')
+        if "Seguindo" in unfollow_link.text:
+            unfollow_link.click()
+            sleep(.3)
+            unfollow_confirm = bot.find_element_by_xpath('/html/body/div[3]/div/div/div[3]/button[1]')
+            sleep(.3)
+            unfollow_confirm.click()
+            sleep(3)
+            print("Unfollowing ", user)
+        else:
+            print("erro ",unfollow_link.text,user)
+
+    def follow_followers(self,user,num=30):
+        bot=self.bot
+        user_db = pd.read_pickle('followers/'+user+'.pickle')
+        following = pd.read_pickle('following.pickle')
+        followers = pd.read_pickle('followers.pickle')
+        people = following['username'].append(followers['username']).drop_duplicates().values
+        users = user_db.username.values
+        users_clean = [x for x in users if x not in people]
+        shuffle(users_clean)
+        for u in users_clean[:num]:
+            try:
+                self.follow_user(u)
+                sleep(3)
+            except Exception as e:
+                print(e)
 
 if __name__ == "__main__":
     insta = Instagram()
     insta.login()
-    #insta.get_follower('cnaranha')
-    insta.get_follower('guanarugby')
-    exit()
-    insta.following()
-    insta.followers()
+    insta.get_follow()
+    insta.get_follow('following')
+    #insta.get_follow('following','cnaranha')
+    #insta.get_follow('followers','cnaranha')
+    #insta.get_follow('following','labnetnce')
+    #insta.get_follow('followers','labnetnce')
+    insta.get_follow('following','guanarugby')
+    insta.get_follow('followers','guanarugby')
+    #insta.follow_followers('labnetnce')
+    insta.follow_followers('cnaranha')
     insta.get_photos()
-    #exit()
-    sleep(19)
     insta.curtir(30)
-    sleep(240)
     words = (['hacker','engineering','technology','innovation','startup',
     'brasilrugby','datascience','machinelearning','tkditf','taekwondoitf',
     'riodejaneiro','climatechange','fluminensefc','ipanema','copacabana',
@@ -245,7 +217,14 @@ if __name__ == "__main__":
     'tbt','love','beautiful','fashion','love','rugby','fgv','ufrj','sustentavel',
     'sustentabilidade','sustainability','sustaintable','nofilter'])
     shuffle(words)
-    for word in words[:7]:
+    for word in words[:10]:
         print('\n word: '+word,flush=True)
         insta.curtir_hashtag(word,1)
         sleep(140)
+    exit()
+    to_follow = ['','labnetnce','guanarugby','cnaranha']
+    for tf in to_follow:
+        for f in ['followers','following']:
+            break
+            print('get_follow ' + str(f) + ' ' + str(tf) )
+            insta.get_follow(str(f), str(tf))
