@@ -11,7 +11,6 @@ from os import listdir
 class Instagram:
     def __init__(self):
         self.bot = webdriver.Firefox()
-
     def login(self):
         bot = self.bot
         self.username,self.password = models.get_credentials('instagram')
@@ -195,23 +194,28 @@ class Instagram:
             except Exception as e:
                 print(e)
 
+    def unfollow_not_followers(self,first=0,last=50):
+        bot=self.bot
+        following = pd.read_pickle('following.pickle')
+        follower = pd.read_pickle('followers.pickle')
+        following = following.sort_values('time_first')
+        following_not_follower = [x for x in following[following['time_last'] == max(following['time_last'])]['username'].values if x  not in follower['username'].values ]
+        for user in following_not_follower[first:last]:
+            try:
+                self.unfollow_user(user)
+                sleep(.3)
+            except:
+                print('unfollow ',user)
+
 if __name__ == "__main__":
     insta = Instagram()
     insta.login()
-    #insta.get_follow()
-    #insta.get_follow('following')
-    #insta.get_follow('following','bravustkitf')
-    #insta.get_follow('followers','bravustkitf')
-    #insta.get_follow('following','cnaranha')
-    #insta.get_follow('followers','cnaranha')
-    #insta.get_follow('following','labnetnce')
-    #insta.get_follow('followers','labnetnce')
-    #insta.get_follow('following','guanarugby')
-    #insta.get_follow('followers','guanarugby')
-    #insta.follow_followers('labnetnce')
-    insta.follow_followers('cnaranha')
+    insta.get_follow()
+    insta.get_follow('following')
+    insta.unfollow_not_followers(last=20)
+    insta.follow_followers('cnaranha',20)
     insta.get_photos()
-    insta.curtir(30)
+    insta.curtir(15)
     words = (['hacker','engineering','technology','innovation','startup',
     'brasilrugby','datascience','machinelearning','tkditf','taekwondoitf',
     'riodejaneiro','climatechange','fluminensefc','ipanema','copacabana',
@@ -224,7 +228,7 @@ if __name__ == "__main__":
         insta.curtir_hashtag(word,1)
         sleep(140)
     exit()
-    to_follow = ['','labnetnce','guanarugby','cnaranha']
+    to_follow = ['','labnetnce','guanarugby','bravustkitf','cnaranha']
     for tf in to_follow:
         for f in ['followers','following']:
             break
