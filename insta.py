@@ -212,7 +212,7 @@ if __name__ == "__main__":
     insta.login()
     insta.get_follow()
     insta.get_follow('following')
-    insta.unfollow_not_followers(last=20)
+    #insta.unfollow_not_followers(last=20)
     insta.follow_followers('cnaranha',20)
     insta.get_photos()
     insta.curtir(15)
