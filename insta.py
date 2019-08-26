@@ -16,21 +16,20 @@ class Instagram:
         self.username,self.password = models.get_credentials('instagram')
         bot.get('https://www.instagram.com/accounts/login/?hl=pt-br')
         sleep(3)
+
         username = bot.find_element_by_name('username')
         password = bot.find_element_by_name('password')
         username.send_keys(self.username)
         password.send_keys(self.password)
         password.send_keys(Keys.RETURN)
         sleep(3)
-        try:
-            bot.find_element_by_xpath('/html/body/div[3]/div/div/div[3]/button[2]').click()
-            sleep(0.3)
-        except:
-            pass
+        self.not_now()
 
     def curtir(self,pages=10):
         bot = self.bot
         bot.get('https://www.instagram.com/?hl=pt-br')
+        sleep(1)
+        self.not_now()
         curtida = 0
         while curtida < pages:
             #print(curtida)
@@ -39,6 +38,7 @@ class Instagram:
                 bot.find_element_by_xpath('//article//section/span[1]/button/span[@aria-label="Curtir"]').click()
                 curtida +=1
             except Exception as e:
+                self.not_now()
                 print(e)
                 bot.execute_script('window.scrollTo(0,document.body.scrollHeight)')
 
@@ -54,6 +54,7 @@ class Instagram:
                 heart.click()
                 print('o',end='',flush=True)
             except:
+                self.not_now()
                 print('.',end='',flush=True)
 
     def get_photos(self):
@@ -77,8 +78,12 @@ class Instagram:
         else:
             pickle_file = follow+'/'+str(user)+'.pickle'
             csv_file = follow+'/'+str(user)+'.csv'
+            bot.get('https://www.instagram.com/'+ user)
+            sleep(.3)
+            self.get_numbers(user,'get_follow')
         bot.get('https://www.instagram.com/'+ user +'/'+follow+'/')
         sleep(.3)
+        self.not_now()
         if follow == 'followers':
             follow_link = bot.find_element_by_xpath('/html/body/span/section/main/div/header/section/ul/li[2]/a').click()
             sleep(.3)
@@ -143,10 +148,19 @@ class Instagram:
         df.to_pickle(pickle_file)
         df.to_csv(csv_file)
 
+    def not_now(self):
+        bot = self.bot
+        try:
+            bot.find_element_by_xpath('/html/body/div[2]/div/div/div[3]/button[2]').click()
+            print('not now')
+        except:
+            pass
+
     def follow_user(self, user):
         bot=self.bot
         bot.get('https://www.instagram.com/'+ user)
         sleep(.3)
+        self.get_numbers(user,'follow')
         try:
             follow_link = bot.find_element_by_xpath('/html/body/span/section/main/div/header/section/div[1]/div[1]/span/span[1]/button')
             if "Seguir" in follow_link.text:
@@ -166,6 +180,7 @@ class Instagram:
         bot=self.bot
         bot.get('https://www.instagram.com/'+ user)
         sleep(.3)
+        self.get_numbers(user,'unfollow')
         unfollow_link = bot.find_element_by_xpath('/html/body/span/section/main/div/header/section/div[1]/div[1]/span/span[1]/button')
         if "Seguindo" in unfollow_link.text:
             unfollow_link.click()
@@ -192,9 +207,29 @@ class Instagram:
                 self.follow_user(u)
                 sleep(3)
             except Exception as e:
+                self.not_now()
                 print(e)
 
-    def unfollow_not_followers(self,first=0,last=50):
+    def get_numbers(self,user='',command=''):
+        bot = self.bot
+        sleep(.5)
+        try:
+            num_pubs = bot.find_element_by_xpath('/html/body/span/section/main/div/header/section/ul/li[1]/*/span').text.replace('milhões','00000').replace('mil','00').replace('.','').replace(',','')
+            num_followers = bot.find_element_by_xpath('/html/body/span/section/main/div/header/section/ul/li[2]/*/span').text.replace('milhões','00000').replace('mil','00').replace('.','').replace(',','')
+            num_following = bot.find_element_by_xpath('/html/body/span/section/main/div/header/section/ul/li[3]/*/span').text.replace('milhões','00000').replace('mil','00').replace('.','').replace(',','')
+            print(user,num_pubs,num_followers,num_following)
+            bio = bot.find_element_by_xpath('/html/body/span/section/main/div/header/section/div[2]/h1').text.strip().replace(';',',')
+            data = list([str(pd.datetime.now()),str(user),str(num_pubs),str(num_followers),str(num_following),str(command),str(bio)])
+            with open('user_data.csv','a+') as f:
+                f.write(';'.join(data) + '\n')
+            return data
+        except Exception as e:
+            self.not_now()
+            print('erro get_numbers',e)
+            return 0,0,0,0
+
+
+    def unfollow_not_followers(self,first=0,last=15):
         bot=self.bot
         following = pd.read_pickle('following.pickle')
         follower = pd.read_pickle('followers.pickle')
@@ -205,6 +240,7 @@ class Instagram:
                 self.unfollow_user(user)
                 sleep(.3)
             except:
+                self.not_now()
                 print('unfollow ',user)
 
 if __name__ == "__main__":
@@ -212,7 +248,7 @@ if __name__ == "__main__":
     insta.login()
     insta.get_follow()
     insta.get_follow('following')
-    #insta.unfollow_not_followers(last=20)
+    insta.unfollow_not_followers(last=15)
     insta.follow_followers('cnaranha',20)
     insta.get_photos()
     insta.curtir(15)
@@ -227,10 +263,8 @@ if __name__ == "__main__":
         print('\n word: '+word,flush=True)
         insta.curtir_hashtag(word,1)
         sleep(140)
-    exit()
     to_follow = ['','labnetnce','guanarugby','bravustkitf','cnaranha']
     for tf in to_follow:
         for f in ['followers','following']:
-            break
             print('get_follow ' + str(f) + ' ' + str(tf) )
             insta.get_follow(str(f), str(tf))
