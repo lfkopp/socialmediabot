@@ -319,3 +319,495 @@ date;user;pubs;followers;following;command;bio
 2019-08-26 15:22:19.885325;guanarugby;529;1918;1740;get_follow;Guanabara Rugby Football Club
 2019-08-26 15:35:57.374668;guanarugby;529;1918;1740;get_follow;Guanabara Rugby Football Club
 2019-08-26 16:05:52.915999;bravustkitf;40;412;614;get_follow;BRAVUS | TKD ITF
+2019-08-27 18:09:12.382288;personalbrunofurtado;313;1438;1739;unfollow;Bruno Furtado Personal
+2019-08-27 18:09:18.674176;denise_mano;0;245;107;unfollow;Denise Maria Mano Pessoa
+2019-08-27 18:09:25.297045;violeirochicolobo;601;1899;897;unfollow;Violeiro Chico oficial
+2019-08-27 18:10:49.058024;biazinhacaldas;295;220;482;unfollow;Beatriz Caldas
+2019-08-27 18:10:55.790131;valeriakwarmling;25;2405;735;unfollow;Valeria Koerich Warmling
+2019-08-27 18:11:02.680359;priscillateixeira12;552;1451;1364;unfollow;Priscila Teixeira
+2019-08-27 18:11:16.539429;lee.huijun.7;4;452;754;unfollow;Lee Hui Jun
+2019-08-27 18:11:23.235482;apereira28_;781;2242;1826;unfollow;Andrea Pereira
+2019-08-27 18:13:06.395870;julisanchezz23;14;441;360;unfollow;julia
+2019-08-27 18:13:14.137210;rvs1970;239;462;547;unfollow;René
+2019-08-27 18:13:22.161416;adamshelleytkd;50;1882;946;unfollow;Adam Shelley
+2019-08-27 18:13:30.585714;vivi_araujopimentel;8;36;36;unfollow;ana vitoria
+2019-08-27 18:13:38.188257;mariaguinha54;3;48;28;unfollow;Maria das Graças
+2019-08-27 18:13:45.663504;carmem5302;0;67;66;unfollow;Carmem Rosa
+2019-08-27 18:13:53.589205;erion_orbit;27;203;1719;follow;alexandre erion
+2019-08-27 18:14:01.438317;d_h_19;291;970;2029;follow;Daniel H. Franca
+2019-08-27 18:14:08.667326;lailsonhenrique;43;1616;2694;follow;Lailson Henrique
+2019-08-27 18:14:26.493726;luennislaura;297;1678;7497;follow;Luennis Laura Torres
+2019-08-27 18:14:34.058047;cosme_nr7;26;536;899;follow;Cosme Santos
+2019-08-27 18:14:41.537120;rosa6960;84;821;2538;follow;ROSA
+2019-08-27 18:14:49.205571;joaolourencogc;180;460;1289;follow;João Lourenço Clemente
+2019-08-27 18:14:56.516664;julianabatista19;49;395;849;follow;Juliana Batista
+2019-08-27 18:15:03.991518;ernane.montanhas;89;380;1633;follow;Ernane Gonçalves
+2019-08-27 18:15:11.405644;profmonicacortes;92;510;1739;follow;Monica Cortes
+2019-08-27 18:15:18.850642;magalhaes3849;588;1427;3394;follow;Monica Magalhaes
+2019-08-27 18:15:26.470425;chirley8;157;646;416;follow;chirley silva
+2019-08-27 18:15:34.185687;renansbr;169;556;1092;follow;Renan Silva
+2019-08-27 18:15:48.796234;saahsantos73;121;680;3296;follow;Saah Santos
+2019-08-27 18:15:55.514288;dicoloreparaiso;1;683;7389;follow;DicoloreParaiso
+2019-08-27 18:16:02.592420;letferro;652;1087;1830;follow;Letícia
+2019-08-27 18:16:12.129231;lmarcelomartinez;12;389;915;follow;marcelo
+2019-08-27 19:54:30.795652;nataliamarchesi;444;2079;667;unfollow;Natália Marchesi
+2019-08-27 19:56:05.626019;andressa_gtkd;118;397;640;unfollow;Andressa Almeida
+2019-08-27 19:56:17.970841;maiaradalves;579;1493;1014;unfollow;Maiara Dalves
+2019-08-27 19:56:51.890976;sudamericano2019_bs_as;36;1530;89;unfollow;VII Centro Sudamericano 2019
+2019-08-27 19:57:37.627845;pejoaoclaudio;8648;3303;4926;unfollow;João Claudio L. do Nascimento
+2019-08-27 19:57:45.663544;evertonaerts;2372;1065;4045;unfollow;Everton Juliano Rodrigues
+2019-08-27 19:57:54.732632;mailen_olivera;10;445;797;unfollow;Mailen Olivera
+2019-08-27 19:58:08.394642;luanaindio;602;368;605;unfollow;Luana Indio
+2019-08-27 19:59:13.555727;lidsonmascarenhas;67;660;3177;unfollow;Lidson_Mascarenhas
+2019-08-27 19:59:21.079943;alexandrabrunetti;3210;2720;6099;unfollow;Alexandra Brunetti
+2019-08-27 19:59:29.197361;jozymartins_;86;1788;709;unfollow;Jozy
+2019-08-27 19:59:36.787706;suoliveirarj;0;120;275;unfollow;Suéllen Oliveira
+2019-08-27 19:59:44.808400;rosangelanunespiment;197;2349;7435;unfollow;rosangelanunespimenta
+2019-08-27 19:59:52.640921;scheil4farias;92;306;683;unfollow;scheila farias
+2019-08-27 20:00:00.594499;cafdantas;841;1796;6569;follow;Carlos Dantas
+2019-08-27 20:00:07.986249;amiccilucas;72;856;1660;follow;Lucas Amicci
+2019-08-27 20:00:15.138009;joelyne_silva;5;1443;3241;follow;Joeline
+2019-08-27 20:00:24.114984;laly.diniz;67;945;2296;follow;Laise Diniz
+2019-08-27 20:00:31.349968;regimoura1984;2;235;1065;follow;reginaldo Moura
+2019-08-27 20:00:39.016119;tamires4734;18;1302;5144;follow;Tamires Dias
+2019-08-27 20:01:02.165529;alves_jalisson_music;66;457;1269;follow;Jalisson Alves
+2019-08-27 20:01:09.801996;dorisalessandrahoff;264;1364;3387;follow;Doris Hoff
+2019-08-27 20:01:17.344842;jlucasdsantos;64;559;2757;follow;jorge lucas dos santos
+2019-08-27 20:01:24.694887;aline.s.palma;57;626;2043;follow;Aline Palma
+2019-08-27 20:01:32.101545;fabriciohegon;56;489;1013;follow;Fabricio Hegon Machado
+2019-08-27 20:01:39.234822;r2brito;15;333;885;follow;Rodrigo Brito
+2019-08-27 20:01:46.396448;jaadsonrocha;11;394;428;follow;Jadson
+2019-08-27 20:01:54.220519;depinhomachado;72;170;581;follow;Guilherme De Pinho Machado
+2019-08-27 20:02:01.714708;valgiovana;5314;1833;5884;follow;Val Giovana Lima
+2019-08-27 20:02:09.191164;marinholeo;163;1120;2068;follow;Leonardo Maciel Marinho
+2019-08-27 20:02:16.981194;maiara_2018;137;497;3305;follow;maiara e maraisa 2016
+2019-08-28 21:47:16.336306;nataliamarchesi;444;2079;667;unfollow;Natália Marchesi
+2019-08-28 21:47:22.899316;jean.c.nunes;0;471;1158;unfollow;Jean Carlos Nunes
+2019-08-28 21:47:29.704937;_moohmartinez;137;1478;4432;unfollow;Monizi Martinez
+2019-08-28 21:47:59.031392;natthan.kohl;64;1620;902;unfollow;Nathan Kohl
+2019-08-28 21:48:05.789978;thaiscapelli;135;738;857;unfollow;Thais Capelli de Campos
+2019-08-28 21:49:04.961012;silvia_carvalho_oliveira;124;1308;674;unfollow;Silvia Carvalho
+2019-08-28 21:50:06.224559;joaovcastro97;16;531;1252;unfollow;João Victor de Castro
+2019-08-28 21:50:56.774329;joicesouza531;7;2340;6178;unfollow;Joice Souza
+2019-08-28 21:51:04.731056;lianecg1;453;322;315;unfollow;Lianecg
+2019-08-28 21:51:11.160915;jklenbruno;0;96;333;unfollow;Juliana Klenbruno
+2019-08-28 21:51:34.656615;gabisbatista7;2119;1165;7090;unfollow;Gabrielle Batista
+2019-08-28 21:52:45.187858;rosevendrame;314;2936;7502;unfollow;Rose Vendrame Personal Trainer
+2019-08-28 21:52:53.605464;jhsilvamendes14;84;499;1283;unfollow;J H.
+2019-08-28 21:53:37.166190;taycappoani;121;3103;1344;unfollow;Taynara Cappoani
+2019-08-28 21:53:44.249401;sabrinacontieri;127;508;1060;follow;Sabrina Contieri
+2019-08-28 21:53:51.315944;flavianimarcon;211;683;736;follow;Paula Marcon
+2019-08-28 21:53:57.824266;anapaulla69;16;685;3232;follow;Ana Paula
+2019-08-28 21:54:25.070994;tinanevess;28;914;7181;follow;Cristina Neves
+2019-08-28 21:54:32.133698;christianoliveira.adm;182;872;5148;follow;Christian Oliveira
+2019-08-28 21:54:38.841577;moni_amber_;70;95;201;follow;Simone Amber
+2019-08-28 21:54:45.686426;bulbovclaudia;97;150;305;follow;claudia bulbov
+2019-08-28 21:54:52.187227;jujubamisidoro;2;121;300;follow;Juliana Matos
+2019-08-28 21:55:09.451283;tattoo4barbeiro;806;869;2414;follow;Juvenal Xavier
+2019-08-28 21:55:16.334506;flaviaburity;439;527;2298;follow;Flavia Burity
+2019-08-28 21:55:29.889716;socramtavares;1818;1940;7430;follow;Marcos Tavares
+2019-08-28 21:55:36.018659;m.c_1000;80;220;416;follow;maria Cristina Araújo da silva
+2019-08-28 21:55:42.874154;gentiltwo;153;2233;2200;follow;Gentil II
+2019-08-28 21:55:49.437944;nilianeaguiar;217;1873;7499;follow;Dra. Niliane Aguiar
+2019-08-28 21:55:55.894299;alexsanderpereira;3;329;1981;follow;Alexsander Pereira (Alex)
+2019-08-28 21:56:02.825560;rafaeljhonyoshiro;84;657;681;follow;Rafael Jhony Oshiro
+2019-08-28 23:09:52.957240;gabisbatista7;2119;1165;7090;unfollow;Gabrielle Batista
+2019-08-28 23:09:55.551554;grazibiesek;72;1854;1511;unfollow;Grazieli Biesek
+2019-08-28 23:10:25.903999;abouchkrym;35;1005;172;unfollow;Abouch Krymchantowski
+2019-08-28 23:10:32.452543;jaquelinespiazzi;342;18500;809;unfollow;Jaqueline Spiazzi
+2019-08-28 23:10:39.228540;gabi_alg;454;1030;938;unfollow;Gabriela Goulart
+2019-08-28 23:10:46.131280;ana_marcieli;32;1590;1128;unfollow;Ana Marcieli Froelich
+2019-08-28 23:11:22.018531;marina_fabiane;63;2405;1014;unfollow;MARINA FABIANE
+2019-08-28 23:11:28.847627;nabhan_isa;74;1916;526;unfollow;Isabela
+2019-08-28 23:11:35.408619;bruna2128p;53;1817;593;unfollow;Bruna Pereira
+2019-08-28 23:11:37.844785;eduardagabriely_;116;5098;2078;unfollow;Eduarda Gabriely
+2019-08-28 23:11:44.939249;aliceseboold;14;4255;1006;unfollow;Alice Sebold
+2019-08-28 23:11:51.546980;andressalopessf;32;2862;994;unfollow;Andressa Lopes Ferreira
+2019-08-28 23:12:34.884784;joe_ferreira_real;541;15300;2031;unfollow;Joe Ferreira
+2019-08-28 23:12:42.487112;lai_bonatto;210;7367;590;unfollow;L A I A N E B O N A T T O
+2019-08-28 23:12:50.871765;jorgemendes456;223;369;2478;follow;Jorgemendes
+2019-08-28 23:13:04.719259;arnaldo_s_s;237;507;1178;follow;Arnaldo Santos
+2019-08-28 23:13:11.999193;erasmojosedeoliveirajunior;412;639;1821;follow;Erasmo José de Oliveira Junior
+2019-08-28 23:13:19.531404;janainafrancisvieira;181;1317;1963;follow;Janaina Francis
+2019-08-28 23:13:26.089730;_thelivia_;4;787;472;follow;Lívia Vitória
+2019-08-28 23:13:33.300073;joaomugabe;0;788;2484;follow;João Mugabe
+2019-08-28 23:13:39.923691;rhprafael_henrique;28;66;273;follow;Rafael Henrique Pereira
+2019-08-28 23:13:47.756149;tekaprincss;437;728;2079;follow;STUDIO BELEZA URBANA MARINGÁ
+2019-08-28 23:13:54.241784;thiagomaacedo;16;1003;1634;follow;ThiagoMacedo
+2019-08-28 23:14:01.140253;macor061972;82;368;2484;follow;Marcelo Macor Carvalho Ramos
+2019-08-28 23:14:10.064940;bureaucompliance;125;1465;4658;follow;Bureau Compliance
+2019-08-28 23:14:17.020865;lauriceiavicente;22;240;374;follow;lauriceia vicente
+2019-08-28 23:14:24.113818;moesiojesus;2035;677;1786;follow;Moesio Jesus
+2019-08-28 23:14:30.728079;gambi_ma;78;891;4198;follow;Marilia Gabriela Conceição
+2019-08-28 23:14:44.764605;binholillyms;1112;3721;813;follow;binho&lilly Moda&Estilo
+2019-08-28 23:14:51.268287;camiilaftas;6;594;584;follow;Camila Freitas
+2019-08-28 23:14:57.871448;tatticard;38;354;473;follow;Tatiane Cardoso
+2019-08-28 23:15:04.670127;gustavolima2795;143;422;2298;follow;Gustavo Lima
+2019-08-28 23:15:11.585671;franciellecalisto;142;732;3002;follow;Francielle Calisto
+2019-08-29 00:23:02.538049;assisvinicius;664;1611;359;get_follow;Vinicius Assis
+2019-08-29 00:32:34.490578;assisvinicius;664;1611;359;get_follow;Vinicius Assis
+2019-08-29 00:37:00.284091;labnetnce;15;101;33;get_follow;LabNet - NCE/UFRJ
+2019-08-29 00:38:33.002483;labnetnce;15;101;33;get_follow;LabNet - NCE/UFRJ
+2019-08-29 00:39:48.563654;guanarugby;531;1915;1739;get_follow;Guanabara Rugby Football Club
+2019-08-29 00:52:07.160572;guanarugby;531;1915;1739;get_follow;Guanabara Rugby Football Club
+2019-08-29 01:21:04.819649;bravustkitf;41;427;631;get_follow;BRAVUS | TKD ITF
+2019-08-29 01:25:42.931075;bravustkitf;41;427;631;get_follow;BRAVUS | TKD ITF
+2019-08-29 11:06:08.204073;gabisbatista7;2119;1166;7091;unfollow;Gabrielle Batista
+2019-08-29 11:06:10.935405;gabi_alg;454;1031;939;unfollow;Gabriela Goulart
+2019-08-29 11:06:20.792383;bruna2128p;53;1822;593;unfollow;Bruna Pereira
+2019-08-29 11:06:30.809537;aliceseboold;14;4264;1006;unfollow;Alice Sebold
+2019-08-29 11:07:34.001551;amaandaleticiaa;26;2436;815;unfollow;Amanda Letícia
+2019-08-29 11:07:44.032752;leticiaduarted;33;4045;1141;unfollow;Leticia Dalpasqual Duarte
+2019-08-29 11:07:56.190275;meriholdizs;69;1970;808;unfollow;Merilin Holdizs
+2019-08-29 11:08:05.851745;adrielihermann;69;4524;1266;unfollow;Adrieli Hermann
+2019-08-29 11:08:15.828162;djenifer_zych;75;4323;1591;unfollow;• D J E N I F E R Z Y C H •
+2019-08-29 11:08:45.286416;katiafreireaustralia;910;1033;668;unfollow;Kátia Freire Almeida
+2019-08-29 11:08:54.949304;nathaliapozzo;78;5405;490;unfollow;Nathália R. Pozzo
+2019-08-29 11:09:04.328149;londonreviewofbooks;1953;45700;123;unfollow;London Review of Books
+2019-08-29 11:09:14.424871;gi_adria;21;1206;840;unfollow;GIOVANA ADRIA
+2019-08-29 11:09:24.382568;ketlinschnell;12;3234;596;unfollow;Ketlin Schnell
+2019-08-29 11:09:58.821687;neide_araujo.13;26;328;1197;unfollow;gelcineide da silva Araújo
+2019-08-29 11:10:08.472764;jeanrge;537;1869;3020;unfollow;Jean Rodrigues
+2019-08-29 11:10:18.519848;josanttiago;22;923;1059;unfollow;Josiane Santiago
+2019-08-29 11:10:28.188155;gonsalvesshirlei;109;774;892;unfollow;shirlei gonsalves
+2019-08-29 11:10:37.987086;gusttavocarvalho20;13;1126;3575;unfollow;Henrique Carvalho
+2019-08-29 11:10:47.334149;igor_barbosa.ib;5;147;283;unfollow;Igor Barbosa
+2019-08-29 11:10:57.287207;cintiasici;73;496;213;unfollow;Cintia Dayane
+2019-08-29 11:12:08.054739;pedrostoeberl;76;1642;2964;unfollow;Pedro
+2019-08-29 11:12:17.974433;raiipaiva;186;752;496;unfollow;Raiza Paiva
+2019-08-29 11:12:28.017073;thiagoantonino;6;164;161;unfollow;Thiago Antonino
+2019-08-29 11:14:33.003647;luciana_daudt;831;609;343;unfollow;Luciana Daudt
+2019-08-29 11:14:42.823495;erika_alessandra_leao;95;401;939;unfollow;Erika Alessandra Leão
+2019-08-29 11:14:53.134429;gaabischwartz;53;4221;483;unfollow;Gabriela Schwartz Padilha
+2019-08-29 11:15:02.922541;camilecristina_;12;1554;593;unfollow;Camile Rataieski
+2019-08-29 11:15:35.266718;anaperuzzo;18;1485;560;unfollow;Ana Julia
+2019-08-29 11:15:45.285264;milenaturmina;58;3593;664;unfollow;Milena Turmina
+2019-08-29 11:16:06.282592;amandarafain;66;6724;1037;unfollow;Amanda Rafain
+2019-08-29 11:16:16.457315;gabiluvison;255;1400;1874;unfollow;G A B I L U V I S O N
+2019-08-29 11:16:37.352452;miitelles;140;1949;618;unfollow;Milena Telles
+2019-08-29 11:16:47.269516;mirelarobertab;14;9348;1741;unfollow;Mirela Roberta
+2019-08-29 11:16:57.202315;jmsschneiders;893;2494;7500;unfollow;Jean M. Schaefer Schneiders
+2019-08-29 11:17:07.258864;kkfloresta;43;553;271;unfollow;Erika Melo
+2019-08-29 11:17:18.340431;belafranca;1232;1590;999;unfollow;Bela França
+2019-08-29 11:17:38.727462;stolphocris;43;14300;2790;unfollow;Cris Stolpho
+2019-08-29 11:17:48.542084;alinedandrade;144;941;916;unfollow;Aline Andrade
+2019-08-29 11:17:58.353878;alexanderssan;372;1495;2850;unfollow;alexander santana dos santos
+2019-08-29 11:18:10.802944;luanavazzatta;19;1418;752;unfollow;Luana Vazzatta
+2019-08-29 11:18:20.248659;julianamaiacantora;1114;4180;3124;unfollow;Juliana Maia
+2019-08-29 11:18:29.824403;baroni_rafa;96;10700;4341;unfollow;Rafaela Thais Malmann Baroni
+2019-08-29 11:18:49.083750;amityuval9;312;7995;399;unfollow;Amit Yuval
+2019-08-29 11:18:58.638872;nathalybulle;92;3562;3161;unfollow;Nathaly Bullé
+2019-08-29 11:19:45.130883;ga_biluz;554;6933;3910;unfollow;Gabriela Luz
+2019-08-29 11:19:54.535885;eduarda_constantino;586;10200;1816;unfollow;Eduarda Ruaro Constantino
+2019-08-29 11:20:04.025676;fittipaldiflavia;1211;1466;1352;unfollow;Flavia Fittipaldi
+2019-08-29 11:20:23.831935;thaianemuniz;374;1820;1105;unfollow;Thaiane Muniz
+2019-08-29 11:20:34.577109;pedrohbbarbosa;146;507;518;unfollow;Pedro Henrique Batista Barbosa
+2019-08-29 11:21:14.671432;karinemelloduvivier;506;822;718;unfollow;Karine Mello Duvivier
+2019-08-29 11:21:24.306835;nay_bif;121;1541;2316;unfollow;Nayara Bif
+2019-08-29 11:21:33.820551;junior.fabriciomj__;91;246;2014;unfollow;Fabricio Moura Junior
+2019-08-29 11:22:31.960807;sampaio.fran;265;501;903;unfollow;Fran Sampaio
+2019-08-29 11:23:14.712500;d_h_19;291;970;2029;unfollow;Daniel H. Franca
+2019-08-29 11:23:24.431852;dra.carolinesass;34;625;1288;unfollow;Dra. Caroline Sass
+2019-08-29 11:23:33.998271;camilaanllelini;1166;681;1277;unfollow;Camila Anllelini
+2019-08-29 11:23:43.476856;dicoloreparaiso;1;684;7387;unfollow;DicoloreParaiso
+2019-08-29 11:23:53.519976;saahsantos73;121;680;3298;unfollow;Saah Santos
+2019-08-29 11:24:03.147174;renansbr;169;558;1092;unfollow;Renan Silva
+2019-08-29 11:24:05.534874;chirley8;157;647;417;unfollow;chirley silva
+2019-08-29 11:24:17.567145;joaolourencogc;180;460;1289;unfollow;João Lourenço Clemente
+2019-08-29 11:24:27.112125;cosme_nr7;26;538;900;unfollow;Cosme Santos
+2019-08-29 11:24:36.615961;vibeastral;219;34900;1206;unfollow;Sara Ribeiro
+2019-08-29 11:24:39.362054;julipagui;2170;5416;3670;unfollow;Juliana Guimarães
+2019-08-29 11:24:58.094818;humansofny;4964;9400000;157;unfollow;Humans of New York
+2019-08-29 11:25:07.655073;akaluiza;98;2296;555;unfollow;luiza
+2019-08-29 11:25:17.105080;laaisbenato;376;8300;1757;unfollow;Laís Benato
+2019-08-29 11:25:29.877083;sartori.julia;426;1420;854;unfollow;Júlia Sartori
+2019-08-29 11:25:39.536459;nana_oleinik;93;4298;1069;unfollow;Giovanna Oleinik
+2019-08-29 11:26:29.151000;walterfernandes_official;829;6044;1179;unfollow;Walter Fernandes
+2019-08-29 11:26:38.726475;requetemejor;1971;2556;3552;unfollow;Talita Barreto
+2019-08-29 11:26:48.699776;carlaprechlak;58;2165;900;unfollow;Carla Prechlak
+2019-08-29 11:26:58.465176;cafe_fernandes;633;2231;905;unfollow;Carol Fernandes
+2019-08-29 11:27:08.108282;eliane.gomes.980315;5;768;534;unfollow;Eliane Gomes
+2019-08-29 11:27:17.617878;pericardomarques;1447;5965;1949;unfollow;Padre Ricardo B. Marques
+2019-08-29 11:27:27.397514;cwestofficial;355;8447;47;unfollow;Christopher West
+2019-08-29 11:27:46.425651;lauraturra;96;2508;1179;unfollow;Laura Darif Turra
+2019-08-29 11:27:56.030102;danifmoretto;53;2820;996;unfollow;Daniela Fiori
+2019-08-29 11:28:05.875555;carlaboura;89;170;230;unfollow;Carla Boura
+2019-08-29 11:28:15.430059;elainerromero;1573;1840;2457;unfollow;Elaine Rodrigues Romero
+2019-08-29 11:28:24.883763;dudabaldessar;55;5318;356;unfollow;Eduarda Baldessar
+2019-08-29 11:28:34.409998;carvalhobeatriz;991;1435;1096;unfollow;Bia Carvalho
+2019-08-29 11:30:25.263898;cafdantas;843;1799;6576;unfollow;Carlos Dantas
+2019-08-29 11:30:35.354269;anaa_fidel;216;6819;800;unfollow;A N A F I D E L
+2019-08-29 11:30:45.038169;manuguancino_;130;10900;992;unfollow;Emanuelle Guancino
+2019-08-29 11:30:57.635408;alves_jalisson_music;66;459;1272;unfollow;Jalisson Alves
+2019-08-29 11:31:07.388818;jlucasdsantos;64;560;2759;unfollow;jorge lucas dos santos
+2019-08-29 11:33:14.226856;valgiovana;5322;1835;5884;unfollow;Val Giovana Lima
+2019-08-29 11:33:24.108104;maiara_2018;137;495;3304;unfollow;maiara e maraisa 2016
+2019-08-29 11:34:43.367313;thaysfernandaa04;57;2272;1338;unfollow;Thays Fernanda
+2019-08-29 11:35:21.559569;isamariacorreia;127;2605;1418;unfollow;Isadora Maria Correia
+2019-08-29 11:35:31.726500;eduarda_macari;51;5677;2918;unfollow;Eduarda Macari
+2019-08-29 11:36:56.687770;eugabrielamanica;80;1073;768;unfollow;Gabriela Manica
+2019-08-29 11:38:02.460959;anah_pirees;42;1486;1341;unfollow;ANA JULIA
+2019-08-29 11:38:50.267525;isacenatti;115;9585;996;unfollow;isa cenatti
+2019-08-29 11:39:01.148753;vanessasarmento.oficial;772;2257;1665;unfollow;Vanessa Sarmento
+2019-08-29 11:39:11.654402;nicoly.gheller;33;2756;975;unfollow;Nicoly Gheller
+2019-08-29 11:39:21.263494;sidiane.silveira;30;1119;606;unfollow;Sidiane Silveira
+2019-08-29 11:39:30.816850;isabelaverdi;139;7704;1031;unfollow;Isabela Verdi
+2019-08-29 11:39:50.023190;thaybilhao;240;1052;480;unfollow;Thayane Bilhão
+2019-08-29 11:39:59.475553;lidyzaboenco;197;2476;3410;unfollow;Lidy
+2019-08-29 11:40:09.908972;casluynicosta;197;1227;638;unfollow;Casluyni da Costa
+2019-08-29 11:40:19.487441;kimmandelli;796;19800;982;unfollow;Kimberly Mandelli
+2019-08-29 11:41:22.782279;lg_deoliveira;61;2322;1791;unfollow;L A U R A G A B R I E L A
+2019-08-29 11:41:33.041649;thaliaferanti;45;3755;955;unfollow;Thalia Alabora Feranti
+2019-08-29 11:41:43.774983;rssignori;135;2469;973;unfollow;Raylla Signori
+2019-08-29 11:41:54.412621;tonellobruna;38;7551;1337;unfollow;Bruna Clara Tonello
+2019-08-29 11:42:05.530840;karolcarvalhods;422;3017;1537;unfollow;Karol Carvalho
+2019-08-29 11:42:16.133045;fernandafollmann;320;1900;918;unfollow;Fernanda Follmann
+2019-08-29 11:42:48.126718;imaculadarecreio;1812;2914;20;unfollow;Paróquia Imaculada Conceição
+2019-08-29 11:42:58.880481;isa.amonteiro;35;1107;941;unfollow;Isa Monteiro
+2019-08-29 11:43:20.613956;kalineveras;4061;1075;1847;unfollow;Kaline Véras
+2019-08-29 11:43:34.411696;juliaoaraujo_;707;1196;807;unfollow;Júlia Oliveira
+2019-08-29 11:43:45.825263;lineeberns;39;1454;1292;unfollow;Aline Berns
+2019-08-29 11:43:57.542737;thayssarippel;82;1125;650;unfollow;Thayssa Rippel
+2019-08-29 11:44:20.388348;gabi_adriana;40;12800;747;unfollow;Gabriela Adriana
+2019-08-29 11:45:14.469879;glnsamira;20;1475;781;unfollow;Samira
+2019-08-29 11:45:25.530720;desie.vivian;122;2013;2433;unfollow;Vivian Desie
+2019-08-29 11:45:37.031389;drgabrielchecoli;86;1665;3060;unfollow;Dr. Gabriel Checoli
+2019-08-29 11:45:48.318092;santossju;329;1206;957;unfollow;Juliana Santos
+2019-08-29 11:46:17.542823;alevezaro;18;1930;1177;unfollow;Alessandra Gabriela Vezaro
+2019-08-29 11:46:28.913533;kelyrose;546;969;2527;unfollow;kelly
+2019-08-29 11:46:40.126790;cleiahasse;11;392;837;unfollow;cléiahasse
+2019-08-29 11:47:29.483355;jessicareineri;995;13900;1977;unfollow;Jéssica Reineri
+2019-08-29 11:47:39.604644;barbukowski;3279;55200;2146;unfollow;Bar Bukowski
+2019-08-29 11:48:01.781732;canalhagram;131;39600;6441;unfollow;Canalha ®
+2019-08-29 11:48:12.763288;dannispada;596;1589;1073;unfollow;Danielle Spada
+2019-08-29 11:48:23.689921;fernandamaciel_oficial;1107;11200;813;unfollow;Fernanda Maciel
+2019-08-29 11:48:34.922741;biaachristmann;146;4326;935;unfollow;Beatriz Milena Christmann
+2019-08-29 11:48:45.943346;clinicadoscachos;2025;55900;7193;unfollow;Clinica Dos Cachos
+2019-08-29 11:48:57.465092;amandafassina_;7;1436;623;unfollow;amanda fassina
+2019-08-29 11:50:02.596413;eduhasse;47;1211;564;unfollow;Eduarda Hasse
+2019-08-29 11:50:13.236217;eckertbruna;118;1673;1132;unfollow;Bruna Eloysa Eckert
+2019-08-29 11:50:35.645873;deisykarina;86;5402;910;unfollow;Deisy Arenhart
+2019-08-29 11:50:48.529868;marcelonielandnunes;40;1011;1072;unfollow;Marcelo Nieland
+2019-08-29 11:51:17.321053;bruna.neitzke;23;1000;219;unfollow;Neitzke
+2019-08-29 11:51:28.638759;darikozikoski;26;2457;1065;unfollow;Dariele
+2019-08-29 11:52:57.300165;schelleana;30;1429;554;unfollow;Ana Carolina
+2019-08-29 11:53:07.591487;dudaassmann;48;11800;1639;unfollow;EDUARDA ASSMANN
+2019-08-29 11:53:30.168425;chiamolera_;25;10300;654;unfollow;DAIANE CHIAMOLERA
+2019-08-29 11:53:42.205032;alana_cristinapb;73;1848;632;unfollow;Alana C. Pertussatti Bertan
+2019-08-29 11:53:53.491677;jeh_roodrigues;44;1345;1263;unfollow;Jéssica Rodrigues
+2019-08-29 11:54:04.845030;amandaa.sz;43;1025;1163;unfollow;Amanda Souza
+2019-08-29 11:54:15.988291;giirevers;60;9988;969;unfollow;G I S E L E R E V E R S
+2019-08-29 11:54:27.505394;j3ssica.oliveira;17;2686;471;unfollow;J É S S I C A O L I V E I R A
+2019-08-29 11:54:38.585837;sabrinakoenigsdorf;243;1670;1114;unfollow;Sabrina koenigsdorf
+2019-08-29 11:54:49.896535;deborahferreir4;57;2049;793;unfollow;Déborah Ferreira
+2019-08-29 11:55:00.994834;_garciarafa;170;8259;619;unfollow;RAFAELA GARCIA
+2019-08-29 11:55:12.093884;tattoo4barbeiro;806;871;2412;unfollow;Juvenal Xavier
+2019-08-29 11:55:23.115046;nilianeaguiar;217;1876;7500;unfollow;Dra. Niliane Aguiar
+2019-08-29 11:55:26.524876;sabrinacontieri;127;509;1060;unfollow;Sabrina Contieri
+2019-08-29 11:55:48.935474;andressa.marttinss;40;5128;409;unfollow;Andressa Marttins
+2019-08-29 11:55:59.300039;joaomugabe;0;788;2485;unfollow;João Mugabe
+2019-08-29 11:56:10.961837;bureaucompliance;125;1467;4658;unfollow;Bureau Compliance
+2019-08-29 11:56:22.266979;lauriceiavicente;22;241;374;unfollow;lauriceia vicente
+2019-08-29 11:56:33.448458;franciellecalisto;142;733;3002;unfollow;Francielle Calisto
+2019-08-29 11:56:44.552321;tailinegalvani;43;9306;378;unfollow;Tailine
+2019-08-29 11:56:55.781628;nathaliigabriela;12;984;577;unfollow;Nathali Gabriela
+2019-08-29 11:57:07.493643;thainanmoschei;145;6072;1139;unfollow;Thainan Moschei
+2019-08-29 11:57:19.029957;janainafrancisvieira;181;1317;1964;unfollow;Janaina Francis
+2019-08-29 11:57:43.839952;luisalacerda_;2025;7411;612;unfollow;Luísa Lacerda
+2019-08-29 11:57:55.087399;dianaandreollii;90;3921;1008;unfollow;Diana Andreolli
+2019-08-29 11:58:06.033759;tinaemelie;2566;25300;438;unfollow;Emelie Forsberg
+2019-08-29 11:58:17.072526;operacoesrio;4912;92100;196;unfollow;Centro de Operações Rio
+2019-08-29 11:58:28.472518;emiliebiason;706;4668;951;unfollow;Emilie Biason
+2019-08-29 11:58:39.415620;ninalessaa;6873;10800;714;unfollow;Nina Lessa
+2019-08-29 11:58:50.409267;jujubamisidoro;2;124;300;unfollow;Juliana Matos
+2019-08-29 11:59:01.866727;wanessa_laraa;226;10200;1991;unfollow;Wanessa Lara
+2019-08-29 11:59:14.027894;arnaldo_s_s;237;509;1178;unfollow;Arnaldo Santos
+2019-08-29 13:26:31.166558;gabisbatista7;2119;1166;7092;unfollow;Gabrielle Batista
+2019-08-29 13:26:33.313303;neide_araujo.13;26;328;1197;unfollow;gelcineide da silva Araújo
+2019-08-29 13:26:49.834612;jeanrge;537;1870;3020;unfollow;Jean Rodrigues
+2019-08-29 13:27:06.277844;josanttiago;22;922;1059;unfollow;Josiane Santiago
+2019-08-29 13:27:22.752196;gonsalvesshirlei;109;774;892;unfollow;shirlei gonsalves
+2019-08-29 13:27:39.944276;gusttavocarvalho20;13;1127;3575;unfollow;Henrique Carvalho
+2019-08-29 13:27:56.165147;igor_barbosa.ib;5;147;283;unfollow;Igor Barbosa
+2019-08-29 13:28:12.695612;cintiasici;73;496;213;unfollow;Cintia Dayane
+2019-08-29 13:28:29.316021;pedrostoeberl;76;1642;2964;unfollow;Pedro
+2019-08-29 13:28:47.493035;raiipaiva;186;752;496;unfollow;Raiza Paiva
+2019-08-29 13:29:03.945342;thiagoantonino;6;164;161;unfollow;Thiago Antonino
+2019-08-29 13:29:20.337401;luciana_daudt;832;609;343;unfollow;Luciana Daudt
+2019-08-29 13:29:36.739500;erika_alessandra_leao;95;401;939;unfollow;Erika Alessandra Leão
+2019-08-29 13:29:53.206673;gaabischwartz;53;4223;483;unfollow;Gabriela Schwartz Padilha
+2019-08-29 13:30:09.661895;camilecristina_;12;1555;593;unfollow;Camile Rataieski
+2019-08-29 13:30:26.018175;anaperuzzo;18;1484;560;unfollow;Ana Julia
+2019-08-29 13:30:42.527235;milenaturmina;58;3594;664;unfollow;Milena Turmina
+2019-08-29 13:31:15.438732;amandarafain;66;6723;1037;unfollow;Amanda Rafain
+2019-08-29 13:31:31.877382;gabiluvison;255;1400;1875;unfollow;G A B I L U V I S O N
+2019-08-29 13:32:05.333239;miitelles;140;1948;618;unfollow;Milena Telles
+2019-08-29 13:32:21.728876;mirelarobertab;14;9350;1741;unfollow;Mirela Roberta
+2019-08-29 13:32:38.318170;jmsschneiders;893;2494;7499;unfollow;Jean M. Schaefer Schneiders
+2019-08-29 13:32:54.796739;stolphocris;43;14400;2790;unfollow;Cris Stolpho
+2019-08-29 13:33:11.348432;alinedandrade;144;941;916;unfollow;Aline Andrade
+2019-08-29 13:33:27.908647;alexanderssan;372;1495;2850;unfollow;alexander santana dos santos
+2019-08-29 13:33:44.503254;amityuval9;312;7996;399;unfollow;Amit Yuval
+2019-08-29 13:34:01.084437;nathalybulle;92;3561;3161;unfollow;Nathaly Bullé
+2019-08-29 13:34:17.612849;nay_bif;121;1541;2316;unfollow;Nayara Bif
+2019-08-29 13:34:34.783786;junior.fabriciomj__;91;246;2014;unfollow;Fabricio Moura Junior
+2019-08-29 13:34:51.758429;sampaio.fran;265;501;903;unfollow;Fran Sampaio
+2019-08-29 13:35:08.998813;d_h_19;291;970;2029;unfollow;Daniel H. Franca
+2019-08-29 13:35:25.636349;dra.carolinesass;34;625;1288;unfollow;Dra. Caroline Sass
+2019-08-29 13:35:42.406099;camilaanllelini;1166;681;1277;unfollow;Camila Anllelini
+2019-08-29 13:35:59.005329;dicoloreparaiso;1;683;7387;unfollow;DicoloreParaiso
+2019-08-29 13:36:15.606033;saahsantos73;121;680;3298;unfollow;Saah Santos
+2019-08-29 13:36:32.571328;renansbr;169;558;1092;unfollow;Renan Silva
+2019-08-29 13:36:35.427014;chirley8;157;647;417;unfollow;chirley silva
+2019-08-29 13:36:52.007825;joaolourencogc;180;460;1289;unfollow;João Lourenço Clemente
+2019-08-29 13:37:10.287740;cosme_nr7;26;538;900;unfollow;Cosme Santos
+2019-08-29 13:37:27.730743;vibeastral;219;34900;1206;unfollow;Sara Ribeiro
+2019-08-29 13:37:30.730776;julipagui;2170;5417;3670;unfollow;Juliana Guimarães
+2019-08-29 13:38:03.766229;humansofny;4964;9400000;157;unfollow;Humans of New York
+2019-08-29 13:38:20.574624;akaluiza;98;2299;556;unfollow;luiza
+2019-08-29 13:38:37.521515;laaisbenato;376;8303;1757;unfollow;Laís Benato
+2019-08-29 13:38:54.217850;sartori.julia;427;1420;854;unfollow;Júlia Sartori
+2019-08-29 13:39:11.156011;nana_oleinik;93;4300;1069;unfollow;Giovanna Oleinik
+2019-08-29 13:43:45.818078;walterfernandes_official;829;6045;1179;unfollow;Walter Fernandes
+2019-08-29 13:44:02.009435;requetemejor;1971;2556;3552;unfollow;Talita Barreto
+2019-08-29 13:44:18.388596;carlaprechlak;58;2165;900;unfollow;Carla Prechlak
+2019-08-29 13:44:34.674785;cafe_fernandes;634;2231;906;unfollow;Carol Fernandes
+2019-08-29 13:44:50.979197;eliane.gomes.980315;5;768;534;unfollow;Eliane Gomes
+2019-08-29 13:45:07.222746;pericardomarques;1447;5964;1949;unfollow;Padre Ricardo B. Marques
+2019-08-29 13:45:23.475415;cwestofficial;355;8448;47;unfollow;Christopher West
+2019-08-29 13:45:40.169978;lauraturra;96;2510;1180;unfollow;Laura Darif Turra
+2019-08-29 13:45:56.594740;danifmoretto;53;2821;998;unfollow;Daniela Fiori
+2019-08-29 13:46:13.101335;carvalhobeatriz;991;1435;1097;unfollow;Bia Carvalho
+2019-08-29 13:46:29.468914;anah_pirees;42;1487;1341;unfollow;ANA JULIA
+2019-08-29 13:46:45.755592;isacenatti;115;9589;996;unfollow;isa cenatti
+2019-08-29 13:47:02.364105;sidiane.silveira;30;1119;606;unfollow;Sidiane Silveira
+2019-08-29 13:47:18.842469;isabelaverdi;139;7706;1031;unfollow;Isabela Verdi
+2019-08-29 13:47:51.729614;thaybilhao;240;1054;480;unfollow;Thayane Bilhão
+2019-08-29 13:48:08.445554;lidyzaboenco;197;2477;3410;unfollow;Lidy
+2019-08-29 13:48:24.898854;casluynicosta;197;1228;638;unfollow;Casluyni da Costa
+2019-08-29 13:48:41.119803;kimmandelli;796;19800;982;unfollow;Kimberly Mandelli
+2019-08-29 13:48:57.459193;fernandafollmann;320;1902;918;unfollow;Fernanda Follmann
+2019-08-29 13:49:13.873983;imaculadarecreio;1812;2915;20;unfollow;Paróquia Imaculada Conceição
+2019-08-29 13:49:30.217019;isa.amonteiro;36;1107;941;unfollow;Isa Monteiro
+2019-08-29 13:50:02.978594;juliaoaraujo_;707;1196;808;unfollow;Júlia Oliveira
+2019-08-29 13:50:19.607712;lineeberns;39;1454;1292;unfollow;Aline Berns
+2019-08-29 13:50:36.475551;thayssarippel;83;1125;650;unfollow;Thayssa Rippel
+2019-08-29 13:50:52.977209;drgabrielchecoli;86;1665;3059;unfollow;Dr. Gabriel Checoli
+2019-08-29 13:51:09.981698;santossju;329;1206;957;unfollow;Juliana Santos
+2019-08-29 13:51:26.549619;cleiahasse;11;392;837;unfollow;cléiahasse
+2019-08-29 13:51:42.768943;barbukowski;3280;55300;2146;unfollow;Bar Bukowski
+2019-08-29 13:52:15.539645;canalhagram;132;39600;6439;unfollow;Canalha ®
+2019-08-29 13:52:31.880111;dannispada;596;1588;1073;unfollow;Danielle Spada
+2019-08-29 13:52:48.139998;fernandamaciel_oficial;1107;11200;813;unfollow;Fernanda Maciel
+2019-08-29 13:53:04.491455;biaachristmann;146;4326;935;unfollow;Beatriz Milena Christmann
+2019-08-29 13:53:20.898681;clinicadoscachos;2026;55900;7193;unfollow;Clinica Dos Cachos
+2019-08-29 13:53:37.398599;amandafassina_;7;1437;623;unfollow;amanda fassina
+2019-08-29 13:54:43.203690;deisykarina;86;5419;910;unfollow;Deisy Arenhart
+2019-08-29 13:54:59.532397;marcelonielandnunes;40;1012;1072;unfollow;Marcelo Nieland
+2019-08-29 13:55:32.176345;bruna.neitzke;23;1001;220;unfollow;Neitzke
+2019-08-29 13:55:48.765106;darikozikoski;26;2457;1065;unfollow;Dariele
+2019-08-29 13:56:05.319880;jeh_roodrigues;44;1345;1263;unfollow;Jéssica Rodrigues
+2019-08-29 13:56:22.676437;amandaa.sz;43;1025;1163;unfollow;Amanda Souza
+2019-08-29 13:56:39.165213;giirevers;60;9992;968;unfollow;G I S E L E R E V E R S
+2019-08-29 13:56:55.567810;j3ssica.oliveira;17;2689;473;unfollow;J É S S I C A O L I V E I R A
+2019-08-29 13:57:12.209623;sabrinakoenigsdorf;243;1671;1114;unfollow;Sabrina koenigsdorf
+2019-08-29 13:57:28.565292;deborahferreir4;57;2049;793;unfollow;Déborah Ferreira
+2019-08-29 13:57:45.277917;sabrinacontieri;127;510;1060;unfollow;Sabrina Contieri
+2019-08-29 13:58:18.263894;andressa.marttinss;40;5127;410;unfollow;Andressa Marttins
+2019-08-29 13:58:34.721720;lauriceiavicente;22;241;374;unfollow;lauriceia vicente
+2019-08-29 13:58:51.014736;franciellecalisto;142;733;3002;unfollow;Francielle Calisto
+2019-08-29 13:59:08.216847;tailinegalvani;43;9307;378;unfollow;Tailine
+2019-08-29 13:59:24.614432;nathaliigabriela;12;986;577;unfollow;Nathali Gabriela
+2019-08-29 13:59:57.460828;luisalacerda_;2025;7412;612;unfollow;Luísa Lacerda
+2019-08-29 14:00:13.868419;dianaandreollii;90;3920;1006;unfollow;Diana Andreolli
+2019-08-29 14:00:30.290209;operacoesrio;4912;92100;196;unfollow;Centro de Operações Rio
+2019-08-29 14:00:46.869860;emiliebiason;706;4668;951;unfollow;Emilie Biason
+2019-08-29 14:01:03.465279;ninalessaa;6873;10800;714;unfollow;Nina Lessa
+2019-08-29 14:01:19.713399;jujubamisidoro;2;124;300;unfollow;Juliana Matos
+2019-08-29 14:01:36.030380;wanessa_laraa;226;10200;1991;unfollow;Wanessa Lara
+2019-08-29 14:01:52.746420;arnaldo_s_s;237;509;1178;unfollow;Arnaldo Santos
+2019-08-29 15:37:48.233221;gabisbatista7;2119;1166;7092;unfollow;Gabrielle Batista
+2019-08-29 15:37:50.585204;miitelles;140;1948;618;unfollow;Milena Telles
+2019-08-29 15:38:19.178530;jmsschneiders;893;2493;7499;unfollow;Jean M. Schaefer Schneiders
+2019-08-29 15:38:35.588704;gabiluvison;255;1400;1875;unfollow;G A B I L U V I S O N
+2019-08-29 15:38:52.106018;mirelarobertab;14;9354;1742;unfollow;Mirela Roberta
+2019-08-29 15:39:08.326316;amandarafain;66;6723;1037;unfollow;Amanda Rafain
+2019-08-29 15:39:41.194541;milenaturmina;58;3595;665;unfollow;Milena Turmina
+2019-08-29 15:39:57.490842;stolphocris;43;14400;2790;unfollow;Cris Stolpho
+2019-08-29 15:40:13.864474;nathalybulle;92;3561;3161;unfollow;Nathaly Bullé
+2019-08-29 15:40:30.247449;alexanderssan;372;1495;2850;unfollow;alexander santana dos santos
+2019-08-29 15:40:46.519597;alinedandrade;144;941;916;unfollow;Aline Andrade
+2019-08-29 15:41:02.875266;amityuval9;312;7995;399;unfollow;Amit Yuval
+2019-08-29 15:41:19.160567;sampaio.fran;265;501;903;unfollow;Fran Sampaio
+2019-08-29 15:41:35.506367;junior.fabriciomj__;91;246;2014;unfollow;Fabricio Moura Junior
+2019-08-29 15:41:51.686960;nay_bif;121;1541;2316;unfollow;Nayara Bif
+2019-08-29 15:42:07.810416;dicoloreparaiso;1;683;7388;unfollow;DicoloreParaiso
+2019-08-29 15:42:24.138883;saahsantos73;121;680;3298;unfollow;Saah Santos
+2019-08-29 15:42:40.410739;camilaanllelini;1167;680;1277;unfollow;Camila Anllelini
+2019-08-29 15:42:52.865128;dra.carolinesass;34;625;1288;unfollow;Dra. Caroline Sass
+2019-08-29 15:43:09.585689;joaolourencogc;180;460;1289;unfollow;João Lourenço Clemente
+2019-08-29 15:43:25.979473;d_h_19;291;970;2029;unfollow;Daniel H. Franca
+2019-08-29 15:43:42.300069;chirley8;157;647;417;unfollow;chirley silva
+2019-08-29 15:43:58.614651;renansbr;169;558;1092;unfollow;Renan Silva
+2019-08-29 15:44:00.708013;fernandamaciel_oficial;1107;11200;813;unfollow;Fernanda Maciel
+2019-08-29 15:44:13.122154;dannispada;601;1587;1073;unfollow;Danielle Spada
+2019-08-29 15:44:15.184161;canalhagram;132;39700;6439;unfollow;Canalha ®
+2019-08-29 15:44:43.735674;barbukowski;3280;55300;2146;unfollow;Bar Bukowski
+2019-08-29 15:44:55.915782;cleiahasse;11;392;837;unfollow;cléiahasse
+2019-08-29 15:45:12.128845;santossju;329;1205;957;unfollow;Juliana Santos
+2019-08-29 15:45:28.338929;clinicadoscachos;2026;55900;7193;unfollow;Clinica Dos Cachos
+2019-08-29 15:45:40.581068;biaachristmann;146;4327;935;unfollow;Beatriz Milena Christmann
+2019-08-29 15:45:56.786507;amandafassina_;7;1437;623;unfollow;amanda fassina
+2019-08-29 15:46:13.064851;deborahferreir4;57;2050;793;unfollow;Déborah Ferreira
+2019-08-29 15:46:38.813968;sabrinakoenigsdorf;243;1671;1114;unfollow;Sabrina koenigsdorf
+2019-08-29 15:46:55.132290;j3ssica.oliveira;17;2690;474;unfollow;J É S S I C A O L I V E I R A
+2019-08-29 15:47:11.449636;giirevers;60;9994;969;unfollow;G I S E L E R E V E R S
+2019-08-29 15:47:27.969777;drgabrielchecoli;86;1665;3059;unfollow;Dr. Gabriel Checoli
+2019-08-29 15:48:00.725690;deisykarina;86;5419;910;unfollow;Deisy Arenhart
+2019-08-29 15:48:29.242772;fernandafollmann;320;1902;918;unfollow;Fernanda Follmann
+2019-08-29 15:48:45.479057;danifmoretto;53;2823;998;unfollow;Daniela Fiori
+2019-08-29 15:49:01.788252;lauraturra;96;2510;1180;unfollow;Laura Darif Turra
+2019-08-29 15:49:18.224133;vibeastral;219;34900;1206;unfollow;Sara Ribeiro
+2019-08-29 15:49:36.677202;isacenatti;115;9589;996;unfollow;isa cenatti
+2019-08-29 15:49:53.067078;carvalhobeatriz;991;1436;1097;unfollow;Bia Carvalho
+2019-08-29 15:50:09.177697;kimmandelli;796;19800;982;unfollow;Kimberly Mandelli
+2019-08-29 15:50:25.410810;thaybilhao;240;1054;480;unfollow;Thayane Bilhão
+2019-08-29 15:50:57.884011;isabelaverdi;139;7706;1031;unfollow;Isabela Verdi
+2019-08-29 15:51:14.138299;sidiane.silveira;30;1119;606;unfollow;Sidiane Silveira
+2019-08-29 15:51:30.484963;anah_pirees;42;1487;1341;unfollow;ANA JULIA
+2019-08-29 15:52:03.599914;sabrinacontieri;127;510;1061;unfollow;Sabrina Contieri
+2019-08-29 15:52:32.172391;luisalacerda_;2025;7413;612;unfollow;Luísa Lacerda
+2019-08-29 15:52:44.441794;andressa.marttinss;40;5127;411;unfollow;Andressa Marttins
+2019-08-29 15:53:00.613231;franciellecalisto;142;733;3002;unfollow;Francielle Calisto
+2019-08-29 15:53:16.995190;lauriceiavicente;22;241;374;unfollow;lauriceia vicente
+2019-08-29 15:53:33.586693;arnaldo_s_s;237;509;1178;unfollow;Arnaldo Santos
+2019-08-30 21:11:03.114916;bravustkitf;43;435;631;unfollow;BRAVUS | TKD ITF
+2019-08-30 21:11:11.239843;labnetnce;15;102;33;unfollow;LabNet - NCE/UFRJ
+2019-08-30 21:11:19.103349;jaquelineamorimcontabil;88;1188;2557;unfollow;Jaqueline Amorim
+2019-08-30 21:11:27.154289;bibicabral;1151;1180;1261;unfollow;Beatriz Cabral e Gama
+2019-08-30 21:11:44.477164;nnuova;693;249;1134;follow;João Gomes Martins
+2019-08-30 21:11:52.152030;sabrinafigueiredo;420;1698;6324;follow;Sabrina Moraes Figueiredo
+2019-08-30 21:11:59.428179;lgsilva077;13;584;3069;follow;Leonardo Silva
+2019-08-30 21:12:06.686544;luizsoares.ls;33;542;1550;follow;Luiz Soares
+2019-08-30 21:12:14.215038;__lalaoliveira;55;1241;1296;follow;lalaoliveira
+2019-08-30 21:12:21.880811;arilene.se;305;815;1090;follow;arilene s.e.
+2019-08-30 21:12:29.241623;aguiar_familly;106;1244;5604;follow;Cristina Giovanna Gabriella
+2019-08-30 21:12:43.725710;lucasbvarella;8;453;457;follow;Lucas Varella
+2019-08-30 21:12:51.037474;eltonffaria;78;344;1300;follow;Elton
+2019-08-30 21:12:58.535176;graca_gr;113;204;590;follow;Graça Ribeiro
+2019-08-30 21:13:05.807670;curotegodx;3;452;577;follow;Marcos
+2019-08-30 21:13:13.393245;shop120cataguases;1523;3033;7487;follow;Shop 120
+2019-08-30 21:13:21.059267;rogeriomarcosmeine;315;526;6357;follow;Rogério Marcos Meine
+2019-08-30 21:13:28.446151;katarine_xavier;50;1089;2181;follow;katarine xavier
+2019-08-30 21:13:35.742416;marceloferreira76;25;481;1325;follow;marcelo braga m ferreira
+2019-08-30 21:13:49.876080;lorena.leandro28;806;2240;7495;follow;Lorena Leandro
+2019-08-30 21:13:57.778008;sereisempresincera;0;64;1066;follow;Só Verdades
+2019-08-30 21:14:06.253771;elianemerloti;290;775;2021;follow;Eliane Merloti
+2019-08-30 22:17:49.690742;assisvinicius;664;1614;350;get_follow;Vinicius Assis
+2019-08-30 22:27:26.323537;assisvinicius;664;1614;350;get_follow;Vinicius Assis
+2019-08-30 22:31:21.215638;labnetnce;15;101;33;get_follow;LabNet - NCE/UFRJ
+2019-08-30 22:33:00.118661;labnetnce;15;101;33;get_follow;LabNet - NCE/UFRJ
+2019-08-30 22:34:16.061773;guanarugby;532;1918;1739;get_follow;Guanabara Rugby Football Club
+2019-08-30 23:00:10.164865;guanarugby;532;1918;1739;get_follow;Guanabara Rugby Football Club
+2019-08-30 23:47:02.563131;bravustkitf;43;434;631;get_follow;BRAVUS | TKD ITF
+2019-08-30 23:53:27.279964;bravustkitf;43;434;631;get_follow;BRAVUS | TKD ITF

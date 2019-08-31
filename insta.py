@@ -263,7 +263,7 @@ if __name__ == "__main__":
         print('\n word: '+word,flush=True)
         insta.curtir_hashtag(word,1)
         sleep(140)
-    to_follow = ['','labnetnce','guanarugby','bravustkitf','cnaranha']
+    to_follow = ['assisvinicius','labnetnce','guanarugby','bravustkitf'] #,'cnaranha']
     for tf in to_follow:
         for f in ['followers','following']:
             print('get_follow ' + str(f) + ' ' + str(tf) )
