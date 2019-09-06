@@ -251,7 +251,7 @@ if __name__ == "__main__":
     insta.unfollow_not_followers(last=15)
     insta.follow_followers('cnaranha',20)
     insta.get_photos()
-    insta.curtir(15)
+    insta.curtir(30)
     words = (['hacker','engineering','technology','innovation','startup',
     'brasilrugby','datascience','machinelearning','tkditf','taekwondoitf',
     'riodejaneiro','climatechange','fluminensefc','ipanema','copacabana',
