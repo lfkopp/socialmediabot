@@ -1,6 +1,5 @@
-import pandas as pd 
-import numpy as np
-from datetime import datetime
-import random
+def impares(n):
 
-random.randint(1,3)
+    print(x) for x in range(1,2*n,2)
+
+impares(5)
