@@ -1,3 +1,4 @@
+#%%
 import models
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
@@ -30,18 +31,18 @@ class Instagram:
 		bot.get('https://www.instagram.com/?hl=pt-br')
 		sleep(1)
 		self.not_now()
-		curtida = 0
-		while curtida < pages:
-			#print(curtida)
-			sleep(4)
+		for i in range(pages):
 			try:
-				bot.find_element_by_xpath('//article//section/span[1]/button/span[@aria-label="Curtir"]').click()
-				curtida +=1
-			except Exception as e:
-				self.not_now()
-				print(e)
+				for x in bot.find_elements_by_class_name("_8-yf5 "):
+					if x.get_attribute("aria-label") == "Curtir":
+						if x.get_attribute("height") == '24':
+							x.click()
+							sleep(2)
 				bot.execute_script('window.scrollTo(0,document.body.scrollHeight)')
-
+				sleep(4)
+			except Exception as e:
+				print(e)
+		
 	def curtir_hashtag(self, hashtag, n=5):
 		bot = self.bot
 		links = models.get_shortcode(hashtag,n)
@@ -49,13 +50,12 @@ class Instagram:
 			sleep(3)
 			try:
 				bot.get(post+'?hl=pt-br')
-				heart = bot.find_element_by_xpath('//article//section/span[1]/button/span[@aria-label="Curtir"]')
-				sleep(2)
-				heart.click()
-				print('o',end='',flush=True)
-			except:
-				self.not_now()
-				print('.',end='',flush=True)
+				x = bot.find_element_by_class_name("_8-yf5 "):
+				if x.get_attribute("aria-label") == "Curtir":
+					if x.get_attribute("height") == '24':
+						x.click()
+			except Exception as e:
+				print(e)
 
 	def get_photos(self):
 		follower = pd.read_pickle('followers.pickle')
@@ -243,6 +243,9 @@ class Instagram:
 				self.not_now()
 				print('unfollow ',user)
 
+
+
+#%%
 if __name__ == "__main__":
 	insta = Instagram()
 	insta.login()
@@ -264,8 +267,9 @@ if __name__ == "__main__":
 		print('\n word: '+word,flush=True)
 		insta.curtir_hashtag(word,1)
 		sleep(140)
-	to_follow = ['assisvinicius','labnetnce','guanarugby','bravustkitf'] #,'cnaranha']
+	to_follow = ['assisvinicius','labnetnce','guanarugby','bravus_tkditf'] #,'cnaranha']
 	for tf in to_follow:
 		for f in ['followers','following']:
 			print('get_follow ' + str(f) + ' ' + str(tf) )
 			insta.get_follow(str(f), str(tf))
+
