@@ -45,17 +45,20 @@ class Instagram:
 		
 	def curtir_hashtag(self, hashtag, n=5):
 		bot = self.bot
-		links = models.get_shortcode(hashtag,n)
-		for post in links:
-			sleep(3)
-			try:
-				bot.get(post+'?hl=pt-br')
-				x = bot.find_element_by_class_name("_8-yf5 "):
+		for post in models.get_shortcode(hashtag,n):
+			bot.get(post+'?hl=pt-br')
+			sleep(2)
+			for x in bot.find_elements_by_class_name("_8-yf5 "):
+				sleep(.3)
 				if x.get_attribute("aria-label") == "Curtir":
 					if x.get_attribute("height") == '24':
-						x.click()
-			except Exception as e:
-				print(e)
+						try:
+							sleep(.5)
+							x.click()
+							sleep(1.4)
+						except Exception as e:
+							print(e)
+						break
 
 	def get_photos(self):
 		follower = pd.read_pickle('followers.pickle')
@@ -243,6 +246,32 @@ class Instagram:
 				self.not_now()
 				print('unfollow ',user)
 
+#%%
+
+insta = Instagram()
+insta.login()
+sleep(3)
+insta.bot.find_element_by_xpath('//button[text()="Agora não"]').click()
+sleep(3)
+insta.bot.find_element_by_xpath('//button[text()="Agora não"]').click()
+sleep(3)
+
+
+
+#%%
+insta.curtir(30)
+
+#%%
+words = (['hacker','engineering','technology','innovation','startup',
+'brasilrugby','datascience','machinelearning','tkditf','taekwondoitf',
+'riodejaneiro','climatechange','fluminensefc','ipanema','copacabana',
+'computerscience','arduino','iot','internetofthings','jovemnerd','python',
+'tbt','love','beautiful','fashion','love','rugby','fgv','ufrj','sustentavel',
+'sustentabilidade','sustainability','sustaintable','nofilter'])
+shuffle(words)
+for word in words[:5]:
+	print('\n word: '+word,flush=True)
+	insta.curtir_hashtag(word,3)
 
 
 #%%
@@ -250,26 +279,34 @@ if __name__ == "__main__":
 	insta = Instagram()
 	insta.login()
 	sleep(3)
+	try:
+		insta.bot.find_element_by_xpath('//button[text()="Agora não"]').click()
+		sleep(3)
+		insta.bot.find_element_by_xpath('//button[text()="Agora não"]').click()
+		sleep(3)
+	except:
+		pass
 	insta.get_follow()
 	insta.get_follow('following')
-	insta.unfollow_not_followers(last=15)
-	insta.follow_followers('cnaranha',20)
+	#insta.unfollow_not_followers(last=15)
+	#insta.follow_followers('cnaranha',20)
 	insta.get_photos()
 	insta.curtir(30)
-	words = (['hacker','engineering','technology','innovation','startup',
+	words = (['neo4j','hacker','engineering','technology','innovation','startup',
 	'brasilrugby','datascience','machinelearning','tkditf','taekwondoitf',
-	'riodejaneiro','climatechange','fluminensefc','ipanema','copacabana',
+	'riodejaneiro','climatechange','fluminensefc','ipanema','copacabana','running',
 	'computerscience','arduino','iot','internetofthings','jovemnerd','python',
 	'tbt','love','beautiful','fashion','love','rugby','fgv','ufrj','sustentavel',
-	'sustentabilidade','sustainability','sustaintable','nofilter'])
+	'sustentabilidade','sustainability','sustaintable','nofilter', 'phdlife'])
 	shuffle(words)
-	for word in words[:5]:
+	for word in words[:10]:
 		print('\n word: '+word,flush=True)
-		insta.curtir_hashtag(word,1)
+		insta.curtir_hashtag(word,10)
 		sleep(140)
 	to_follow = ['assisvinicius','labnetnce','guanarugby','bravus_tkditf'] #,'cnaranha']
 	for tf in to_follow:
 		for f in ['followers','following']:
 			print('get_follow ' + str(f) + ' ' + str(tf) )
 			insta.get_follow(str(f), str(tf))
+
 
