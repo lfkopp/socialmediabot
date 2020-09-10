@@ -246,32 +246,6 @@ class Instagram:
 				self.not_now()
 				print('unfollow ',user)
 
-#%%
-
-insta = Instagram()
-insta.login()
-sleep(3)
-insta.bot.find_element_by_xpath('//button[text()="Agora não"]').click()
-sleep(3)
-insta.bot.find_element_by_xpath('//button[text()="Agora não"]').click()
-sleep(3)
-
-
-
-#%%
-insta.curtir(30)
-
-#%%
-words = (['hacker','engineering','technology','innovation','startup',
-'brasilrugby','datascience','machinelearning','tkditf','taekwondoitf',
-'riodejaneiro','climatechange','fluminensefc','ipanema','copacabana',
-'computerscience','arduino','iot','internetofthings','jovemnerd','python',
-'tbt','love','beautiful','fashion','love','rugby','fgv','ufrj','sustentavel',
-'sustentabilidade','sustainability','sustaintable','nofilter'])
-shuffle(words)
-for word in words[:5]:
-	print('\n word: '+word,flush=True)
-	insta.curtir_hashtag(word,3)
 
 
 #%%
@@ -291,7 +265,7 @@ if __name__ == "__main__":
 	#insta.unfollow_not_followers(last=15)
 	#insta.follow_followers('cnaranha',20)
 	insta.get_photos()
-	insta.curtir(20)
+	insta.curtir(5)
 	words = (['neo4j','hacker','engineering','technology','innovation','startup',
 	'brasilrugby','datascience','machinelearning','tkditf','taekwondoitf',
 	'riodejaneiro','climatechange','fluminensefc','ipanema','copacabana','running',
@@ -299,7 +273,7 @@ if __name__ == "__main__":
 	'tbt','love','beautiful','fashion','love','rugby','fgv','ufrj','sustentavel',
 	'sustentabilidade','sustainability','sustaintable','nofilter', 'phdlife'])
 	shuffle(words)
-	for word in words[:5]:
+	for word in words[:10]:
 		print('\n word: '+word,flush=True)
 		insta.curtir_hashtag(word,5)
 		sleep(140)
