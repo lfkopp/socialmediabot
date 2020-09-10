@@ -9,6 +9,7 @@ import pandas as pd
 from wget import download
 from os import listdir
 
+#%%
 class Instagram:
 	def __init__(self):
 		self.bot = webdriver.Firefox()
@@ -43,9 +44,12 @@ class Instagram:
 			except Exception as e:
 				print(e)
 		
-	def curtir_hashtag(self, hashtag, n=5):
+	def curtir_hashtag(self, hashtag, n=5, m=10):
 		bot = self.bot
-		for post in models.get_shortcode(hashtag,n):
+		links = models.get_shortcode(hashtag,n)
+		shuffle(links)
+		links = links[:m]
+		for post in links:
 			bot.get(post+'?hl=pt-br')
 			sleep(2)
 			for x in bot.find_elements_by_class_name("_8-yf5 "):
@@ -249,7 +253,10 @@ class Instagram:
 
 
 #%%
+print('iniciando')
+
 if __name__ == "__main__":
+	print('main')
 	insta = Instagram()
 	insta.login()
 	sleep(3)
@@ -275,7 +282,7 @@ if __name__ == "__main__":
 	shuffle(words)
 	for word in words[:10]:
 		print('\n word: '+word,flush=True)
-		insta.curtir_hashtag(word,5)
+		insta.curtir_hashtag(word,n=5,m=10)
 		sleep(140)
 	to_follow = ['assisvinicius','labnetnce','guanarugby','bravus_tkditf'] #,'cnaranha']
 	for tf in to_follow:
