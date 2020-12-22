@@ -272,7 +272,7 @@ if __name__ == "__main__":
 	#insta.unfollow_not_followers(last=15)
 	#insta.follow_followers('cnaranha',20)
 	insta.get_photos()
-	insta.curtir(5)
+	insta.curtir(25)
 	words = (['neo4j','hacker','engineering','technology','innovation','startup',
 	'brasilrugby','datascience','machinelearning','tkditf','taekwondoitf',
 	'riodejaneiro','climatechange','fluminensefc','ipanema','copacabana','running',
@@ -282,7 +282,7 @@ if __name__ == "__main__":
 	shuffle(words)
 	for word in words[:10]:
 		print('\n word: '+word,flush=True)
-		insta.curtir_hashtag(word,n=5,m=10)
+		insta.curtir_hashtag(word,n=25,m=10)
 		sleep(140)
 	to_follow = ['assisvinicius','labnetnce','guanarugby','bravus_tkditf'] #,'cnaranha']
 	for tf in to_follow:
