@@ -44,7 +44,7 @@ class Instagram:
 			except Exception as e:
 				print(e)
 		
-	def curtir_hashtag(self, hashtag, n=5, m=10):
+	def curtir_hashtag_old(self, hashtag, n=5, m=10):
 		bot = self.bot
 		links = models.get_shortcode(hashtag,n)
 		shuffle(links)
@@ -63,6 +63,20 @@ class Instagram:
 						except Exception as e:
 							print(e)
 						break
+
+	def curtir_hashtag(self, hashtag, n=5, m=10):
+		bot = self.bot
+		bot.get(f'https://www.instagram.com/explore/tags/{hashtag}/?hl=pt-br')
+		for i in range(m):
+			bot.execute_script('window.scrollTo(0,document.body.scrollHeight)')
+			sleep(4)
+		lista = [x.get_attribute('href') for x in bot.find_elements_by_xpath('//a[contains(@href,"/p/")]')]
+		for p in lista:
+			bot.get(p)
+			sleep(.5)
+			bot.find_element_by_xpath('/html/body/div[1]/section/main/div/div[1]/article/div[3]/section[1]/span[1]/button').click()
+			sleep(4)
+
 
 	def get_photos(self):
 		follower = pd.read_pickle('followers.pickle')
@@ -291,3 +305,6 @@ if __name__ == "__main__":
 			insta.get_follow(str(f), str(tf))
 
 
+# %%
+
+# %%
